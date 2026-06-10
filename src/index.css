@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 97%;
+    --foreground: 0 0% 8%;
+    --card: 40 20% 97%;
+    --card-foreground: 0 0% 8%;
+    --popover: 40 20% 97%;
+    --popover-foreground: 0 0% 8%;
+    --primary: 40 45% 57%;
+    --primary-foreground: 0 0% 4%;
+    --secondary: 40 15% 93%;
+    --secondary-foreground: 0 0% 8%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 40 20% 97%;
+    --muted: 40 15% 93%;
+    --muted-foreground: 0 0% 32%;
+    --accent: 40 15% 93%;
+    --accent-foreground: 0 0% 8%;
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 40 45% 57%;
+    --radius: 0.625rem;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    @apply bg-cream-100 text-dark-800 font-sans antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+
+  .lenis.lenis-prevent {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  ::selection {
+    background-color: rgba(200, 164, 92, 0.25);
+    color: #141414;
+  }
+}
+
+@layer components {
+  /* Premium gradient text */
+  .gradient-gold {
+    background: linear-gradient(135deg, #C8A45C, #D4B872, #B8934A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-text-light {
+    background: linear-gradient(to right, #FAF8F3, #C8A45C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Dark overlay */
+  .overlay-dark {
+    background: linear-gradient(to bottom, rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.85));
+  }
+
+  /* Premium hero overlay */
+  .overlay-hero {
+    background: linear-gradient(135deg, rgba(10, 10, 10, 0.7) 0%, rgba(20, 20, 20, 0.65) 50%, rgba(10, 10, 10, 0.75) 100%);
+  }
+
+  /* Link underline animation - gold */
+  .link-underline {
+    position: relative;
+    display: inline-block;
+  }
+
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: #C8A45C;
+    transition: width 0.3s ease;
+  }
+
+  .link-underline:hover::after {
+    width: 100%;
+  }
+
+  /* Form focus - gold */
+  .input-gold:focus {
+    border-color: #C8A45C;
+    box-shadow: 0 0 0 3px rgba(200, 164, 92, 0.15);
+  }
+
+  /* Premium scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F3EFE6;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #C2C2C2;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #A3A3A3;
+  }
+
+  /* Ornamental divider */
+  .divider-ornament {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .divider-ornament::before,
+  .divider-ornament::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #C8A45C, transparent);
+  }
+
+  /* Section label */
+  .label-premium {
+    @apply text-xs font-medium uppercase tracking-[0.15em];
+    color: #C8A45C;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Premium card styling */
+  .card-premium {
+    @apply bg-cream-100 rounded-xl border border-dark-200/60;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+  }
+
+  .card-premium:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+  }
+}
+
+@layer utilities {
+  .page-padding {
+    padding-left: clamp(24px, 5vw, 80px);
+    padding-right: clamp(24px, 5vw, 80px);
+  }
+
+  .container-main {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Font utilities */
+  .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  /* Hide scrollbar utility */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Text shadow */
+  .text-shadow-soft {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  }
+}

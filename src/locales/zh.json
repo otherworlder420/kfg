@@ -1,0 +1,300 @@
+{
+  "nav": {
+    "home": "首页",
+    "ourStory": "我们的故事",
+    "ourRice": "我们的大米",
+    "ourProcess": "生产流程",
+    "globalReach": "全球市场",
+    "news": "新闻",
+    "getInTouch": "联系我们"
+  },
+  "header": {
+    "sendInquiry": "发送询盘",
+    "letsChat": "聊一聊",
+    "whatsapp": "微信WhatsApp",
+    "wechat": "微信",
+    "wechatQrHint": "扫描二维码添加我们"
+  },
+  "hero": {
+    "label": "Khmer Foods Group — 自1994年的柬埔寨家族企业",
+    "title": "从柬埔寨农场到世界",
+    "description": "自1994年以来，我们与柬埔寨全国的农业合作社建立了合作伙伴关系，磨制和出口该国最优质的大米。每一粒米都凝聚着我们农民的心血和我们家族三十年来始终如一的品质。",
+    "exploreRice": "探索我们的大米",
+    "watchVideo": "观看视频"
+  },
+  "about": {
+    "label": "我们的故事",
+    "title": "三十年砂糖之旅，从彭于开始",
+    "paragraph1": "Khmer Foods Group于1994年成立，初为一家小型家族贸易企业，在柬埔寨当地市场买卖大米。凭借耐心、辛勤劳作和对种植我们粮食的农民的深深尊重，我们逐渐建立了将流传世代的关系。",
+    "paragraph2": "到1999年，我们在碼士拔省建立了第一家磨米厂。至今32年，我们一直在精益求精——探索什么让柬埔寨大米成为世界最优质的大米之一。我们于2009年开始出口，如今我们的大米已抵达六大洲的家庭。",
+    "paragraph3": "我们与柬埔寨全国的合同农业合作社携手并进，确保高品质稻谷的可靠供应，同时支持自始至终伴随我们征程的社区。",
+    "statYearsInRice": "从事大米年数",
+    "statFounded": "成立",
+    "statFirstExport": "首次出口",
+    "statCountries": "国家"
+  },
+  "products": {
+    "label": "用心培育",
+    "title": "我们的产品",
+    "description": "我们磨制的每一个品种都有它的故事——传承自柬埔寨农民的世代智慧。我们以对待自己家人餐桌的同样用心来选择、收割和加工。所有品种均可按您的OEM品牌提供，包装和物流均可按您的市场需求定制。",
+    "phkaRumduol": {
+      "name": "Phka Rumduol",
+      "description": "柬埔寨的珠宝——一种芳香粳米，曾六次获得“世界最佳大米”的高度赞誉。每一粒米都颗粒长而光泽，散发着我们湿季稻田的自然芳香。"
+    },
+    "senKroOub": {
+      "name": "Sen Kro Oub (SKO)",
+      "description": "干季的珍宝。在温暖的四月阳光下收割，这些长而柔软的粒米带有淡雅的自然气息，让我们想起了家。柬埔寨最受喜爱的芳香品种。"
+    },
+    "sroNge": {
+      "name": "Sro Nge (SRO)",
+      "description": "可靠的宠儿——芳香白米，每年可收获两到三季。始终在您需要的时候给您支持，带着柬埔寨祖母们世代珍爱的愉悦气息。"
+    },
+    "om5451": {
+      "name": "OM5451白米",
+      "description": "柬埔寨农田的勞模——坚实、白皑、万能。这个高产量品种养活了无数家庭，始终是批量出口到全球各地社区的热门选择。"
+    },
+    "brownRice": {
+      "name": "传承糗米",
+      "description": "营养丰富的全谷物，仔细保留了酹皮层。由我们最优质的Phka Rumduol和SKO品种磨制——健康、精华、充满大地的魏赠。"
+    },
+    "redJasmine": {
+      "name": "红粳米",
+      "description": "一种稀有的柬埔寨珍宝，具有美丽的红棕色酹皮层和坚果、土壤的风味。这种独特的粒米将您与柬埔寨数中化的农业传统相连接。"
+    },
+    "brokenRice": {
+      "name": "碎米",
+      "description": "我们的磨米厂不浪费任何东西。这些温柔的碎片——产自磨米过程——在醴造、米粉和全球各地的养育菜肴中获得新生。"
+    },
+    "neangKhon": {
+      "name": "Neang Khon",
+      "description": "一种受人喜爱的柬埔寨传统白米，又称珍珠米。Neang Khon是一种湿季作物，粒长中等，以其略带粘性的口感和天然的甜味而闻名。广受柬埔寨肥沃北部地区农村家庭的欢迎，适合汤、粥和日常家庭餐点。"
+    },
+    "learnMore": "了解更多"
+  },
+  "process": {
+    "label": "从稻谷到纯米",
+    "title": "我们的磨米工艺",
+    "description": "我们位于碼士拔省的磨米厂是传统与精确的融合。我们使用可靠的Buhler和Satake设备——这些服务于优质大米生产商的设备已有数十年历史——我们以同样的用心和一致性处理每一批产品。",
+    "supportingText": "每一个步骤都有用心的人在监督。我们的设施拥有BRCGS、ISO 22000、ISO 9001、HACCP、GMP和HALAL认证——不是因为我们追逐徽章，而是因为我们相信做对的事。",
+    "step0": {
+      "title": "稻谷接收",
+      "description": "我们只从信任的合同农业合作伙伴那里选择高纯度稻谷，覆盖2,463公顷。每一批都经过称重、测试，并追溯到种植它的合作社。"
+    },
+    "step1": {
+      "title": "稻谷干燥",
+      "description": "新鲜收割的稻谷经过温和干燥，使水分达到恰当水平。太干会导致粒米开裂，太湿则无法正确磨制。我们的磨米工凭直觉知道完美平衡。"
+    },
+    "step2": {
+      "title": "砌壳与清洁",
+      "description": "干燥的稻谷通过清洁和砌壳机器，小心地移除稷壳、石头和杂质。剩余的是美丽的棙米——大自然的礼物，被温柔地处理。"
+    },
+    "step3": {
+      "title": "大米白化",
+      "description": "我们的Buhler UltraWhite机器轻轻地去除酹皮层，呈现出下面珍珠般的白色粒米。我们在这里花时间——耐心是区分好大米与优秀大米的关键。"
+    },
+    "step4": {
+      "title": "大米抛光",
+      "description": "Satake抛光机为每一粒米赋予其独特的光泽——一种自然的光芒告诉您这些大米在每一步都受到了照料。不走捷径。不妥协。"
+    },
+    "step5": {
+      "title": "色选与分级",
+      "description": "我们的光学色选机检查每一粒米，移除任何不符合我们标准的粒子。只有最好的才能通过——因为我们的名字印在每一袋上。"
+    },
+    "step6": {
+      "title": "质量控制",
+      "description": "我们的质控团队在生产的每个阶段检查大米质量——水分、粒长、白度和气味——确保每一批产品都符合客户期望的精确规格。"
+    },
+    "step7": {
+      "title": "包装",
+      "description": "从0.5公斤零售袋到50公斤出口袋和集装袋的灵活包装选项。无论您的市场需要什么，我们都以用心和精确的方式进行包装。"
+    },
+    "step8": {
+      "title": "金属探测器",
+      "description": "每一袋都要通过我们的金属检测系统。这是我们最后的安全检查——因为没有信任就没有质量。"
+    },
+    "step9": {
+      "title": "纸箱封口",
+      "description": "小零售包装被集中打包成密封的纸箱，准备好进入全球各地的超市货架。整洁、安全、即上架。"
+    },
+    "step10": {
+      "title": "集装箱装载",
+      "description": "成品在我们的设施直接装入运输集装箱。整箱货物（FCL）确保您的大米安全地从我们的磨米厂运送到您的港口。"
+    },
+    "step11": {
+      "title": "吊装到火车",
+      "description": "集装箱在我们的设施直接被吊装到铁路平板车上。没有卡车运输，没有延误——只是从磨米厂到铁路的平顺转移。"
+    },
+    "step12": {
+      "title": "铁路到港口",
+      "description": "我们的铁路物流直接将集装箱运送到柬埔寨的深水港。从稻田到港口——一条您可以依赖的无缝供应链。"
+    }
+  },
+  "farming": {
+    "label": "深耕社区",
+    "title": "同心协力，共赋希望",
+    "subtitle": "我们在碼士拔省的合同农业合作伙伴关系",
+    "description": "在农业部的指导下，我们与覆盖2,463公顷的农业合作社建立了持久的合作伙伴关系。我们不仅仅购买大米——我们培养关系。我们的农民是我们的邻居、我们的朋友，也是我们一切的核心。",
+    "statHectares": "公顷农田",
+    "statYield": "每季产量",
+    "statCrops": "SKO、SRO、OM5451"
+  },
+  "cta": {
+    "title": "让我们开始对话",
+    "description": "无论您是小店迫切需要可靠的大米供应商，还是导找柬埔寨最优质粮食的进出口商，我们都很乐意听到您的声音。我们从事大米生意已经三十年以上——我们将感到荣幸与您建立合作关系。",
+    "talkToTeam": "与我们的团队联系",
+    "letsChat": "聊一聊",
+    "sendEmail": "发送电子邮件"
+  },
+  "global": {
+    "label": "全球出口目的地",
+    "title": "欧洲、亚洲、澳洲、北美和非洲",
+    "description": "2024年，柬埔寨自豪地向全球68个国家出口了645,872吨大米。我们很荣幸能够参与这一征程——将我们农民劳动的果实分享给六大洲的家庭。每一批货物都携带着我们家园的一部分。",
+    "ctaText": "了解我们的出口市场",
+    "statCountries": "我们服务的国家",
+    "statTonnes": "2024年分享的吨数",
+    "statYears": "共同成长的年数",
+    "statAwards": "世界最佳大米奖项"
+  },
+  "csr": {
+    "label": "回馈社会",
+    "title": "关爱培育我们的社区",
+    "description": "我们相信，建立在土地上的企业有责任关心生活在这片土地上的人们。因此，我们将每次销售的一部分捐给支持三代人以来一直支持我们的社区的儿童、教育和医疗事业。",
+    "hospitalName": "吶吶儿童医院",
+    "hospitalDescription": "自1999年以来，这家位于暅遥的杰出医院已为柬埔寨儿童提供了超过250万次免费医疗。每Kroya品牌的每次销售都直接用于支持医院的运营——因为每个孩子都值得拥有健康的开始。",
+    "hospitalSince": "自2024年起自豪支持",
+    "schoolName": "基里隆椰子学校",
+    "schoolDescription": "位于碼士拔省山脉之中，这所创新的学校为偏远地区的儿童提供了接受教育、生活技能和希望的机会。我们的大米捐赠帮助他们的学生保持营养，让他们的教室充满活力。",
+    "schoolSince": "自2025年起支持",
+    "commitments": [
+      "每Kroya品牌销售的一部分捐给儿童医疗保健和教育",
+      "我们与提升柬埔寨农村妇女和家庭的组织合作",
+      "我们相信每个孩子都应该获得良好的食物、教育和健康",
+      "我们的农民和他们的家庭始终是我们的首要优先考虑"
+    ]
+  },
+  "quality": {
+    "label": "我们对您的承诺",
+    "title": "您可以信任的质量，您可以验证的标准",
+    "description": "我们不仅仅谈论质量——我们身体力行。每一批产品都被检测，每一个过程都被监控，每一项认证都是实至名归。因为当我们的名字印在袋子上时，我们希望您能像我们一样信心十足地品尝。",
+    "quote": "我们不仅仅磨大米——我们打造信任。从稻谷进入我们设施的那一刻到集装箱封口的最后一刻，每一个过程都紧紧围绕着一件事：那些将围坐在餐桌前品尝的家庭。",
+    "attribution": "— 柬埔寨食品集团团队"
+  },
+  "news": {
+    "label": "来自我们的家庭",
+    "title": "新闻与故事",
+    "description": "来自我们农场、我们社区的最新消息，以及我们将柬埔寨大米分享给世界的征程。"
+  },
+  "footer": {
+    "tagline": "三代柬埔寨大米传承。从合同农场到全球出口。",
+    "subTagline": "自1994年起 — 用心为您提供优质大米",
+    "ourFamily": "我们的家庭",
+    "ourRice": "我们的大米",
+    "connect": "联系",
+    "getInTouch": "联系我们",
+    "copyright": "柬埔寨食品集团有限公司",
+    "allRights": "版权所有",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款"
+  },
+  "contact": {
+    "pageTitle": "联系我们",
+    "pageSubtitle": "我们很乐意听到您的消息。无论您有问题、需要报价，还是想参观我们的磨米厂——我们的家庭团队随时为您服务。",
+    "formTitle": "给我们发消息",
+    "formSubtitle": "填写下方表单，我们将在24小时内回复您。",
+    "name": "全名",
+    "namePlaceholder": "您的全名",
+    "email": "电子邮件",
+    "emailPlaceholder": "your@email.com",
+    "phone": "电话号码",
+    "phonePlaceholder": "+855或您的当地号码",
+    "subject": "主题",
+    "generalInquiry": "一般咨询",
+    "requestQuote": "请求报价",
+    "partnership": "合作机会",
+    "visitMill": "参观磨米厂",
+    "other": "其他",
+    "message": "消息",
+    "messagePlaceholder": "告诉我们您的需求...",
+    "submit": "发送消息",
+    "sending": "发送中...",
+    "success": "谢谢您！您的消息已成功发送。我们将24小时内与您联系。",
+    "error": "出现问题。请重试或直接联系我们。",
+    "directContact": "或直接联系我们",
+    "whatsapp": "WhatsApp",
+    "wechat": "微信",
+    "findUs": "在地图上找到我们"
+  },
+  "form": {
+    "title": "让我们开启合作之旅",
+    "description": "告诉我们您在寻找什么，我们的家庭团队成员将24小时内回复您。我们很喜欢结识新朋友。",
+    "successTitle": "感谢您！",
+    "successMessage": "我们已收到您的消息！我们的家庭团队将24小时内与您联系。我们期待认识您。",
+    "backButton": "返回首页",
+    "submitButton": "发送我的询盘",
+    "submitting": "发送中...",
+    "fullName": "您的姓名",
+    "fullNamePlaceholder": "例如，陈素花",
+    "email": "电子邮件",
+    "emailPlaceholder": "your@email.com",
+    "company": "公司或店铺名称",
+    "companyPlaceholder": "您的企业名称（可选）",
+    "phone": "电话或WhatsApp",
+    "phonePlaceholder": "+855或您的当地号码",
+    "website": "网站",
+    "websitePlaceholder": "www.yourbusiness.com",
+    "productInterest": "您对哪些品种感兴趣？",
+    "quantity": "您需要多少？",
+    "quantityPlaceholder": "大约数量",
+    "unit": "单位",
+    "packaging": "您希望如何包装？",
+    "destination": "我们应该发往哪里？",
+    "destinationPlaceholder": "例如，鹿特丹港",
+    "shippingTerms": "首选运输条款",
+    "specialRequirements": "我们还应该知道什么？",
+    "specialRequirementsPlaceholder": "告诉我们您的需求、您的市场、您的故事...",
+    "howFound": "您是怎么找到我们的家庭的？",
+    "required": "此字段为必填项",
+    "invalidEmail": "电子邮件地址无效",
+    "units": {
+      "mt": "公吨",
+      "kg": "千克",
+      "20ft": "20英尺集装箱"
+    },
+    "packagingOptions": {
+      "retail": "500g至2kg零售包装",
+      "5kg": "5kg袋",
+      "10kg": "10kg袋",
+      "18_20kg": "18-20kg袋",
+      "50lbs_25kg": "50磅 - 25kg",
+      "50kg": "50kg复合编织袋",
+      "jumbo": "集装袋",
+      "loose": "散装"
+    },
+    "deliveryTerms": {
+      "fob": "FOB（装运港船上交货）",
+      "cif": "CIF（成本、保险和运费）",
+      "crf_cnf": "CRF/CNF（成本和运费）"
+    },
+    "howFoundOptions": {
+      "b2b": "B2B平台",
+      "google": "谷歌搜索",
+      "trade_show": "展会或博览会",
+      "social_media": "社交媒体",
+      "retail": "零售店",
+      "referral": "朋友或家人推荐"
+    }
+  },
+  "common": {
+    "scrollLeft": "向左滚动",
+    "scrollRight": "向右滚动",
+    "close": "关闭",
+    "play": "播放",
+    "pause": "暂停",
+    "loading": "加载中...",
+    "readMore": "阅读更多",
+    "learnMore": "了解更多",
+    "sendInquiry": "发送询盘",
+    "watchVideo": "观看视频",
+    "exploreOurRice": "探索我们的大米"
+  }
+}

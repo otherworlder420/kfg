@@ -1,0 +1,491 @@
+{
+  "nav": {
+    "home": "Home",
+    "ourStory": "Our Story",
+    "ourRice": "Our Rice",
+    "ourProcess": "Our Process",
+    "globalReach": "Global Reach",
+    "news": "News",
+    "getInTouch": "Get in Touch"
+  },
+  "header": {
+    "sendInquiry": "Send Inquiry",
+    "letsChat": "Let's Chat",
+    "whatsapp": "WhatsApp",
+    "wechat": "WeChat",
+    "wechatQrHint": "Scan QR code to add us"
+  },
+  "hero": {
+    "label": "Khmer Foods Group — A Cambodian Family Story Since 1994",
+    "title": "From Cambodian Farms to the World",
+    "description": "Since 1994, we've partnered with farming cooperatives across Cambodia to mill and export the country's finest rice. Every grain carries the care of our farmers and the quality our family has stood behind for three decades.",
+    "exploreRice": "Explore Our Rice",
+    "watchVideo": "Watch Video"
+  },
+  "about": {
+    "label": "Our Story",
+    "title": "Three Decades of Rice, From Humble Beginnings",
+    "paragraph1": "Khmer Foods Group started in 1994 as a small family trading business, buying and selling rice in local Cambodian markets. With patience, hard work, and a deep respect for the farmers who grew our grains, we slowly built relationships that would last generations.",
+    "paragraph2": "By 1999, we had established our first milling facility in Kampong Speu. For 32 years now, we've been refining our craft — learning every detail of what makes Cambodian rice some of the finest in the world. We began exporting in 2009, and today our rice reaches families across six continents.",
+    "paragraph3": "We work hand-in-hand with contract farming cooperatives across Cambodia, ensuring a reliable supply of high-quality paddy while supporting the communities that have been part of our journey from the very beginning.",
+    "statYearsInRice": "Years in Rice",
+    "statFounded": "Founded",
+    "statFirstExport": "First Export",
+    "statCountries": "Countries"
+  },
+  "products": {
+    "label": "Grown With Care",
+    "title": "Our Products",
+    "description": "Each variety we mill has a story — passed down through generations of Cambodian farmers in our cooperative network. We select, harvest, and process with the same care we'd give our own family's dinner table. All varieties are available under your own OEM brand, with packaging and logistics tailored to your market.",
+    "phkaRumduol": {
+      "name": "Phka Rumduol",
+      "description": "Cambodia's crown jewel — a fragrant jasmine rice so exquisite it has been crowned World's Best Rice six times. Each grain is long, glossy, and carries the natural perfume of our wet-season paddies."
+    },
+    "senKroOub": {
+      "name": "Sen Kro Oub (SKO)",
+      "description": "A dry-season treasure. Harvested under the warm April sun, these long, soft grains carry a delicate natural scent that reminds us of home. Cambodia's most beloved aromatic variety."
+    },
+    "sroNge": {
+      "name": "Sro Nge (SRO)",
+      "description": "A reliable favorite — fragrant white rice that gives two to three harvests a year. Always there when you need it, with that same pleasant aroma Cambodian grandmothers have cherished for generations."
+    },
+    "om5451": {
+      "name": "OM5451 White Rice",
+      "description": "The workhorse of Cambodian fields — firm, white, and wonderfully versatile. This high-yielding variety has fed countless families and remains a favorite for bulk export to communities worldwide."
+    },
+    "brownRice": {
+      "name": "Heritage Brown Rice",
+      "description": "Nutrient-rich whole grain with the bran layer lovingly left intact. Milled from our finest Phka Rumduol and SKO varieties — wholesome, hearty, and full of the earth's goodness."
+    },
+    "redJasmine": {
+      "name": "Red Jasmine Rice",
+      "description": "A rare Cambodian gem with a beautiful reddish bran layer and a nutty, earthy flavor. This distinctive grain connects you to centuries of Cambodian agricultural tradition."
+    },
+    "brokenRice": {
+      "name": "Broken Rice",
+      "description": "Nothing goes to waste in our mill. These tender fragments — born from the milling process — find new life in brewing, rice flour, and nourishing dishes around the world."
+    },
+    "neangKhon": {
+      "name": "Neang Khon",
+      "description": "A beloved Cambodian traditional white rice, also known as Pearl Rice. Neang Khon is a wet-season crop with medium grain length, prized for its slightly sticky texture and naturally sweet flavor. Popular in rural households across Cambodia's fertile northern regions, it's ideal for soups, porridge, and everyday family meals."
+    },
+    "learnMore": "Learn More"
+  },
+  "process": {
+    "label": "From Paddy to Pure Grain",
+    "title": "Our Milling Process",
+    "description": "Our mills in Kampong Speu are where tradition meets precision. Using trusted Buhler and Satake machinery — the same equipment that has served quality rice producers for decades — we process every batch with the same care and consistency.",
+    "supportingText": "Every step is watched over by people who care. Our facilities carry BRCGS, ISO 22000, ISO 9001, HACCP, GMP, and HALAL certifications — not because we chase badges, but because we believe in doing things right.",
+    "step0": {
+      "title": "Paddy Receiving",
+      "description": "We select only high-purity paddy from our trusted contract farming partners across 2,463 hectares. Every batch is weighed, tested, and traced back to the cooperative that grew it."
+    },
+    "step1": {
+      "title": "Paddy Drying",
+      "description": "Freshly harvested paddy is gently dried to just the right moisture level. Too much, and the grain cracks. Too little, and it won't mill properly. Our millers know the perfect balance by instinct."
+    },
+    "step2": {
+      "title": "Husking & Cleaning",
+      "description": "The dried paddy passes through our cleaning and husking machines, where husks, stones, and impurities are carefully removed. What remains is beautiful brown rice — nature's gift, gently prepared."
+    },
+    "step3": {
+      "title": "Rice Whitening",
+      "description": "Our Buhler UltraWhite machines gently remove the bran layer, revealing the pearly white grain beneath. We take our time here — patience is what separates good rice from great rice."
+    },
+    "step4": {
+      "title": "Rice Polishing",
+      "description": "The Satake polishers give each grain its signature sheen — a natural glow that tells you this rice was cared for at every step. No shortcuts. No compromises."
+    },
+    "step5": {
+      "title": "Color Sorting & Grading",
+      "description": "Our optical color sorters examine every single grain, removing any that don't meet our standards. Only the best make it through — because our name is on every bag."
+    },
+    "step6": {
+      "title": "Quality Control",
+      "description": "Our QC team checks rice quality at every stage of production — moisture, grain length, whiteness, and aroma — ensuring every batch meets the exact specifications our customers expect."
+    },
+    "step7": {
+      "title": "Packaging",
+      "description": "Flexible packaging options from 0.5kg retail pouches to 50kg export sacks and jumbo bags. Whatever your market needs, we pack it with care and precision."
+    },
+    "step8": {
+      "title": "Metal Detector",
+      "description": "Every single bag passes through our metal detection system. It's our final safety check — because quality means nothing without trust."
+    },
+    "step9": {
+      "title": "Carton Sealing",
+      "description": "Small retail packs are master-packed into sealed carton boxes, ready for supermarket shelves around the world. Neat, secure, and shelf-ready."
+    },
+    "step10": {
+      "title": "Container Loading",
+      "description": "Finished goods are loaded directly into shipping containers at our facility. Full container loads (FCL) ensure your rice travels safely from our mill to your port."
+    },
+    "step11": {
+      "title": "Lift to Train",
+      "description": "Containers are lifted onto railway flatcars right at our facility. No trucking, no delays — just a smooth transfer from mill to rail."
+    },
+    "step12": {
+      "title": "Rail to Seaport",
+      "description": "Our railway-connected logistics carry containers directly to Cambodia's deep seaport. From paddies to port — a seamless supply chain you can count on."
+    }
+  },
+  "farming": {
+    "label": "Rooted in Community",
+    "title": "Growing Together, Harvesting Hope",
+    "subtitle": "Our contract farming partnerships in Kampong Thom Province",
+    "description": "Under the guidance of the Ministry of Agriculture, we've built lasting partnerships with farming cooperatives across 2,463 hectares. We don't just buy rice — we grow relationships. Our farmers are our neighbors, our friends, and the heart of everything we do.",
+    "statHectares": "Hectares of Farmland",
+    "statYield": "MT per Harvest",
+    "statCrops": "SKO, SRO, OM5451",
+    "kfgObligations": [
+      "Provide high-purity seeds to guarantee the best genetic quality",
+      "Offer hands-on technical support guided by the Ministry of Agriculture",
+      "Purchase every harvest at prices above market rate — our farmers come first",
+      "Promote sustainable practices that protect our land for the next generation"
+    ],
+    "farmerObligations": [
+      "Cultivate with the same care they'd give their own family's plot",
+      "Follow natural guidelines for chemical and pesticide use",
+      "Keep residues minimal to ensure every grain is safe and pure",
+      "Maintain the integrity that makes Cambodian rice world-renowned"
+    ],
+    "benefits": [
+      "Training programs that pass down generations of farming wisdom",
+      "Community welfare — better healthcare, schools, and roads for everyone",
+      "Economic stability through guaranteed fair prices, rain or shine",
+      "A sustainable future for Cambodia's rice-growing communities"
+    ]
+  },
+  "cta": {
+    "title": "Let's Start a Conversation",
+    "description": "Whether you're a small shop looking for a reliable rice supplier or an importer seeking Cambodia's finest grains, we'd love to hear from you. We've been building relationships around rice for over 30 years — and we'd be honored to build one with you.",
+    "talkToTeam": "Talk to Our Team",
+    "letsChat": "Let's Chat",
+    "sendEmail": "Send an Email"
+  },
+  "global": {
+    "label": "Global Export Destinations",
+    "title": "Europe, Asia, Australia, North America & Africa",
+    "description": "In 2024, Cambodia proudly exported 645,872 tonnes of rice to 68 countries. We're humbled to be part of this journey — sharing the fruits of our farmers' labor with families across six continents. Every shipment carries a piece of our home.",
+    "ctaText": "Learn About Our Export Markets",
+    "statCountries": "Countries We Serve",
+    "statTonnes": "Tonnes Shared in 2024",
+    "statYears": "Years of Growing Together",
+    "statAwards": "World's Best Rice Awards"
+  },
+  "csr": {
+    "label": "Giving Back",
+    "title": "Caring for the Community That Raised Us",
+    "description": "We believe that a business built on the land has a responsibility to the people who live on it. That's why we dedicate a portion of every sale to supporting children, education, and healthcare in the communities that have supported us for three generations.",
+    "hospitalName": "Angkor Hospital for Children",
+    "hospitalDescription": "Since 1999, this remarkable hospital in Siem Reap has provided over 2.5 million free medical treatments to Cambodian children. A portion of every Kroya Brand sale goes directly to keeping their doors open — because every child deserves a healthy start.",
+    "hospitalSince": "Proud supporters since 2024",
+    "schoolName": "Kirirom Coconut School",
+    "schoolDescription": "Nestled in the mountains of Kampong Speu, this innovative school gives children in remote areas access to education, life skills, and hope. Our rice donations help keep their students nourished and their classrooms full.",
+    "schoolSince": "Supporting since 2025",
+    "commitments": [
+      "A portion of every Kroya Brand sale supports children's healthcare and education",
+      "We partner with organizations that uplift women and families in rural Cambodia",
+      "We believe every child deserves access to good food, good schools, and good health",
+      "Our farmers and their families are always our first priority"
+    ]
+  },
+  "quality": {
+    "label": "Our Promise to You",
+    "title": "Quality You Can Trust, Standards You Can Verify",
+    "description": "We don't just talk about quality — we live it. Every batch is tested, every process is monitored, and every certification is earned. Because when our name is on the bag, we want you to feel as confident serving it as we do.",
+    "quote": "We don't just mill rice — we craft trust. From the moment paddy enters our facility to the final seal on the container, every process is designed with one thing in mind: the families who will sit down to eat it.",
+    "attribution": "— The Khmer Foods Group Team"
+  },
+  "news": {
+    "label": "From Our Family",
+    "title": "News & Stories",
+    "description": "The latest from our farm, our community, and our journey to share Cambodian rice with the world.",
+    "readMore": "Read more",
+    "readFullArticle": "Read Full Article",
+    "source": "Source"
+  },
+  "form": {
+    "title": "Let's Start a Partnership",
+    "description": "Tell us a little about what you're looking for, and a member of our family team will get back to you within 24 hours. We love meeting new people.",
+    "successTitle": "Thank You!",
+    "successMessage": "Your message has been received! Someone from our family team will reach out to you within 24 hours. We look forward to getting to know you.",
+    "backButton": "Back to Home",
+    "submitButton": "Send My Inquiry",
+    "submitting": "Sending...",
+    "fullName": "Your Name",
+    "fullNamePlaceholder": "e.g., Sopheap Chen",
+    "email": "Email Address",
+    "emailPlaceholder": "your@email.com",
+    "company": "Company or Shop Name",
+    "companyPlaceholder": "Your business name (optional)",
+    "phone": "Phone or WhatsApp",
+    "phonePlaceholder": "+855 or your local number",
+    "website": "Website",
+    "websitePlaceholder": "www.yourbusiness.com",
+    "productInterest": "Which rice varieties interest you?",
+    "quantity": "How much are you looking for?",
+    "quantityPlaceholder": "Approximate quantity",
+    "unit": "Unit",
+    "packaging": "How would you like it packed?",
+    "destination": "Where should we send it?",
+    "destinationPlaceholder": "e.g., Port of Rotterdam",
+    "shippingTerms": "Preferred shipping terms",
+    "specialRequirements": "Anything else we should know?",
+    "specialRequirementsPlaceholder": "Tell us about your needs, your market, your story...",
+    "howFound": "How did you find our family?",
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "units": {
+      "mt": "Metric Tons",
+      "kg": "Kilograms",
+      "20ft": "20ft Container"
+    },
+    "packagingOptions": {
+      "retail": "500g to 2kg Retail Pack",
+      "5kg": "5kg Bag",
+      "10kg": "10kg Bag",
+      "18_20kg": "18-20kg Bag",
+      "50lbs_25kg": "50lbs - 25kg",
+      "50kg": "50kg PP Bag",
+      "jumbo": "Jumbo Bags",
+      "loose": "Loose Loading"
+    },
+    "deliveryTerms": {
+      "fob": "FOB (Free On Board)",
+      "cif": "CIF (Cost, Insurance, Freight)",
+      "crf_cnf": "CRF/CNF (Cost and Freight)"
+    },
+    "howFoundOptions": {
+      "b2b": "B2B Platform",
+      "google": "Google Search",
+      "trade_show": "Trade Show or Exhibition",
+      "social_media": "Social Media",
+      "retail": "Retail Store",
+      "referral": "Friend or Family Referral"
+    }
+  },
+  "footer": {
+    "tagline": "Three generations of Cambodian rice heritage. From contract farm to global export.",
+    "subTagline": "Since 1994 — Serving you quality rice with heart",
+    "ourFamily": "Our Family",
+    "ourRice": "Our Rice",
+    "connect": "Connect",
+    "getInTouch": "Get in Touch",
+    "copyright": "Khmer Foods Group Co., Ltd.",
+    "allRights": "All Rights Reserved",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "contact": {
+    "pageTitle": "Get in Touch",
+    "pageSubtitle": "We'd love to hear from you. Whether you have a question, need a quote, or want to visit our mill — our family team is here to help.",
+    "formTitle": "Send Us a Message",
+    "formSubtitle": "Fill out the form below and we'll get back to you within 24 hours.",
+    "name": "Full Name",
+    "namePlaceholder": "Your full name",
+    "email": "Email Address",
+    "emailPlaceholder": "your@email.com",
+    "phone": "Phone Number",
+    "phonePlaceholder": "+855 or your local number",
+    "subject": "Subject",
+    "generalInquiry": "General Inquiry",
+    "requestQuote": "Request a Quote",
+    "partnership": "Partnership Opportunity",
+    "visitMill": "Visit Our Mill",
+    "other": "Other",
+    "message": "Message",
+    "messagePlaceholder": "Tell us what you need...",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success": "Thank you! Your message has been sent successfully. We'll be in touch within 24 hours.",
+    "error": "Something went wrong. Please try again or contact us directly.",
+    "directContact": "Or reach us directly",
+    "whatsapp": "WhatsApp",
+    "wechat": "WeChat",
+    "findUs": "Find Us on the Map"
+  },
+  "aboutPage": {
+    "title": "Our Story",
+    "subtitle": "Three decades of passion, precision, and partnership — from a small family trading business to one of Cambodia's most trusted rice exporters.",
+    "timelineTitle": "Our Journey",
+    "milestones": {
+      "1999": {
+        "title": "First Mill",
+        "desc": "Established our first rice milling facility, upgrading from trading to full processing capabilities."
+      },
+      "2005": {
+        "title": "Capacity Expansion",
+        "desc": "Expanded milling capacity to 50 MT/day and invested in modern Buhler machinery."
+      },
+      "2009": {
+        "title": "First Export",
+        "desc": "Shipped our first container of Phka Rumduol Jasmine Rice to international markets."
+      },
+      "2012": {
+        "title": "World's Best Rice",
+        "desc": "Phka Rumduol Jasmine Rice won the first World's Best Rice award at the TRT World Rice Conference."
+      },
+      "2015": {
+        "title": "Certifications",
+        "desc": "Achieved ISO 22000, HACCP, and BRCGS certifications, meeting global food safety standards."
+      },
+      "2018": {
+        "title": "3rd World's Best Rice",
+        "desc": "Won the World's Best Rice award for the third time, solidifying Cambodia's reputation."
+      },
+      "2020": {
+        "title": "Satake Partnership",
+        "desc": "Partnered with Satake for advanced polishing technology, further improving grain quality."
+      },
+      "2022": {
+        "title": "5th World's Best Rice",
+        "desc": "Claimed the World's Best Rice title for a fifth time — a historic achievement."
+      },
+      "2024": {
+        "title": "6th World's Best Rice",
+        "desc": "Won the World's Best Rice award for the sixth time, confirming our unwavering commitment to quality."
+      }
+    },
+    "mission": "Mission",
+    "missionDesc": "To bring Cambodia's finest rice to tables worldwide while uplifting farming communities through fair trade and sustainable agriculture.",
+    "vision": "Vision",
+    "visionDesc": "To become the most trusted name in premium rice exports, recognized globally for quality, integrity, and innovation."
+  },
+  "globalPage": {
+    "title": "Global Reach",
+    "subtitle": "From our mills in Cambodia to tables across six continents. Our rice has reached over 68 countries, carrying the taste of home to millions of families.",
+    "marketsTitle": "Export Markets",
+    "servicesTitle": "Logistics & Services",
+    "termsTitle": "Shipping Terms",
+    "regions": {
+      "europe": {
+        "name": "Europe",
+        "volume": "185,000 MT/year",
+        "growth": "+12% YoY"
+      },
+      "asia": {
+        "name": "Asia",
+        "volume": "220,000 MT/year",
+        "growth": "+18% YoY"
+      },
+      "northAmerica": {
+        "name": "North America",
+        "volume": "95,000 MT/year",
+        "growth": "+8% YoY"
+      },
+      "middleEast": {
+        "name": "Middle East",
+        "volume": "78,000 MT/year",
+        "growth": "+15% YoY"
+      },
+      "africa": {
+        "name": "Africa",
+        "volume": "42,000 MT/year",
+        "growth": "+22% YoY"
+      },
+      "oceania": {
+        "name": "Oceania",
+        "volume": "25,872 MT/year",
+        "growth": "+10% YoY"
+      }
+    },
+    "services": {
+      "seaFreight": {
+        "title": "Sea Freight",
+        "features": [
+          "20ft & 40ft containers",
+          "Bulk vessel chartering",
+          "Port-to-port delivery"
+        ]
+      },
+      "packaging": {
+        "title": "Packaging & Labeling",
+        "description": "Custom packaging solutions from 500g retail packs to 1-tonne jumbo bags, with private labeling and multi-language options.",
+        "features": [
+          "500g to 1000kg options",
+          "Private labeling",
+          "Multi-language packaging"
+        ]
+      },
+      "documentation": {
+        "title": "Documentation",
+        "description": "Complete export documentation handled in-house, ensuring smooth customs clearance at destination ports.",
+        "features": [
+          "Phytosanitary certificates",
+          "Certificate of Origin",
+          "Quality certificates"
+        ]
+      }
+    },
+    "terms": {
+      "fob": {
+        "name": "Free On Board",
+        "desc": "Seller delivers goods on board the vessel at named port of shipment."
+      },
+      "cif": {
+        "name": "Cost, Insurance & Freight",
+        "desc": "Seller covers cost, insurance, and freight to destination port."
+      },
+      "cfr": {
+        "name": "Cost & Freight",
+        "desc": "Seller pays for carriage to destination port; buyer handles insurance."
+      },
+      "exw": {
+        "name": "Ex Works",
+        "desc": "Buyer collects goods from seller's premises; minimum seller obligation."
+      }
+    }
+  },
+  "newsPage": {
+    "title": "News & Stories",
+    "subtitle": "The latest from our farm, our community, and our journey to share Cambodian rice with the world.",
+    "category": "Category",
+    "published": "Published",
+    "featured": "Featured",
+    "relatedStories": "Related Stories",
+    "backToNews": "Back to News"
+  },
+  "processPage": {
+    "title": "Our Process",
+    "subtitle": "Our milling lines are equipped with Buhler and Satake machinery, featuring state-of-the-art technology from paddy intake to container export. 13 steps from farm to port.",
+    "standardsTitle": "Quality Standards & Certifications",
+    "standardsDesc": "Our facilities maintain the highest international standards, ensuring every grain meets global food safety requirements.",
+    "ctaTitle": "See Our Process in Action",
+    "ctaDesc": "Schedule a virtual or in-person facility tour with our team to see how we process Cambodia's finest rice.",
+    "requestTour": "Request a Facility Tour",
+    "contactUs": "Contact Us"
+  },
+  "riceVarieties": {
+    "title": "Our Rice Varieties",
+    "subtitle": "From award-winning fragrant jasmine to versatile white rice, discover the full spectrum of premium Cambodian rice.",
+    "categories": {
+      "all": "All",
+      "fragrant": "Fragrant",
+      "whiteRice": "White Rice",
+      "specialty": "Specialty",
+      "industrial": "Industrial"
+    },
+    "specs": {
+      "season": "Season",
+      "cropCycle": "Crop Cycle",
+      "grainLength": "Grain Length",
+      "color": "Color",
+      "shape": "Shape",
+      "fragrance": "Fragrance"
+    }
+  },
+  "common": {
+    "scrollLeft": "Scroll left",
+    "scrollRight": "Scroll right",
+    "close": "Close",
+    "play": "Play",
+    "pause": "Pause",
+    "loading": "Loading...",
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "sendInquiry": "Send Inquiry",
+    "watchVideo": "Watch Video",
+    "exploreOurRice": "Explore Our Rice"
+  }
+}
