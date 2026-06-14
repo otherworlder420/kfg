@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -6,6 +6,7 @@ import { Award, Users, Leaf, TrendingUp, ArrowRight, Target, Eye, Heart } from "
 import { COMPANY } from "@/data/content";
 import SectionLabel from "@/components/SectionLabel";
 import { useApp } from "@/context/AppContext";
+import CertificateLightbox from "@/components/CertificateLightbox";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -17,10 +18,10 @@ const TIMELINE = [
   { year: "2015", title: "Certifications", description: "Achieved ISO 22000, HACCP, and BRCGS certifications, meeting global food safety standards." },
   { year: "2018", title: "3rd World's Best Rice & Battambang Mill", description: "Won the World's Best Rice award for the third time and completed a rice mill plant in Battambang Province capable of drying paddy 750 MT/day." },
   { year: "2019", title: "Kampong Speu Mill & HACCP", description: "Completed a large scale rice milling plant and export facility in Kampong Speu Province (drying 400 MT/day, milling 500 MT/day) and achieved HACCP certification." },
-  { year: "2022", title: "5th World's Best Rice & ISO 9001 Certification", description: "Claimed the World's Best Rice title for a fifth time and achieved ISO 9001:2015 Quality Management System certification.", certificateImage: "/images/certificates/iso-9001.jpg" },
-  { year: "2024", title: "6th World's Best Rice & ISO 22000 Certification", description: "Won the World's Best Rice award for the sixth time and achieved ISO 22000 Food Safety certification.", certificateImage: "/images/certificates/iso-22000.jpg" },
+  { year: "2022", title: "5th World's Best Rice & ISO 9001 Certification", description: "Claimed the World's Best Rice title for a fifth time and achieved ISO 9001:2015 Quality Management System certification.", certificateImage: "/images/certificates/iso-9001.jpeg" },
+  { year: "2024", title: "6th World's Best Rice & ISO 22000 Certification", description: "Won the World's Best Rice award for the sixth time and achieved ISO 22000 Food Safety certification.", certificateImage: "/images/certificates/iso-22000.jpeg" },
   { year: "2025", title: "7th World's Best Rice & BRCGS Grade A Certification", description: "Won the World's Best Rice award for the seventh time — the most awarded Cambodian rice company in history — and achieved BRCGS Grade A certification covering the complete process from paddy to packaged rice.", certificateImage: "/images/certificates/brcgs-grade-a.png" },
-  { year: "2026", title: "SRP Certification & 3,000MT Chilled Silos", description: "Achieved Sustainable Rice Platform (SRP) certification and completed 3,000MT chilled silos storage dedicated for Phka Rumduol Jasmine Rice.", certificateImage: "/images/certificates/srp.jpg" },
+  { year: "2026", title: "SRP Certification & 3,000MT Chilled Silos", description: "Achieved Sustainable Rice Platform (SRP) certification and completed 3,000MT chilled silos storage dedicated for Phka Rumduol Jasmine Rice.", certificateImage: "/images/certificates/srp.jpeg" },
 ];
 
 const VALUES = [
@@ -39,6 +40,12 @@ const ACHIEVEMENTS = [
 export default function AboutPage() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const { openQuoteModal } = useApp();
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+
+  const certificateImages = TIMELINE
+    .filter((item) => item.certificateImage)
+    .map((item) => ({ src: item.certificateImage!, title: item.title }));
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -159,11 +166,13 @@ export default function AboutPage() {
                     <h3 className="font-display text-xl font-medium text-dark-800 mt-1">{item.title}</h3>
                     <p className="text-dark-600 text-sm mt-2 font-light">{item.description}</p>
                     {item.certificateImage && (
-                      <a
-                        href={item.certificateImage}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`inline-block mt-3 group ${isLeft ? "ml-auto" : "mr-auto"}`}
+                      <button
+                        onClick={() => {
+                          const index = certificateImages.findIndex((img) => img.src === item.certificateImage);
+                          setLightboxIndex(index >= 0 ? index : 0);
+                          setLightboxOpen(true);
+                        }}
+                        className={`inline-block mt-3 group text-left ${isLeft ? "ml-auto" : "mr-auto"}`}
                       >
                         <img
                           src={item.certificateImage}
@@ -171,7 +180,7 @@ export default function AboutPage() {
                           className="w-40 h-auto rounded-lg border border-dark-200 shadow-sm group-hover:shadow-md group-hover:border-gold-400 transition-all duration-300"
                         />
                         <span className="block text-xs text-gold-500 mt-1 group-hover:underline">View certificate</span>
-                      </a>
+                      </button>
                     )}
                   </div>
                   <div className="absolute left-6 lg:left-1/2 w-4 h-4 rounded-full bg-gold-400 border-4 border-white shadow -translate-x-1/2 mt-2" />
@@ -180,11 +189,13 @@ export default function AboutPage() {
                     <h3 className="font-display text-lg font-medium text-dark-800 mt-1">{item.title}</h3>
                     <p className="text-dark-600 text-sm mt-1 font-light">{item.description}</p>
                     {item.certificateImage && (
-                      <a
-                        href={item.certificateImage}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block mt-3 group"
+                      <button
+                        onClick={() => {
+                          const index = certificateImages.findIndex((img) => img.src === item.certificateImage);
+                          setLightboxIndex(index >= 0 ? index : 0);
+                          setLightboxOpen(true);
+                        }}
+                        className="inline-block mt-3 group text-left"
                       >
                         <img
                           src={item.certificateImage}
@@ -192,7 +203,7 @@ export default function AboutPage() {
                           className="w-32 h-auto rounded-lg border border-dark-200 shadow-sm group-hover:shadow-md group-hover:border-gold-400 transition-all duration-300"
                         />
                         <span className="block text-xs text-gold-500 mt-1 group-hover:underline">View certificate</span>
-                      </a>
+                      </button>
                     )}
                   </div>
                   <div className="hidden lg:block flex-1" />
@@ -240,6 +251,15 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Certificate Lightbox */}
+      <CertificateLightbox
+        images={certificateImages}
+        currentIndex={lightboxIndex}
+        isOpen={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+        onNavigate={setLightboxIndex}
+      />
     </div>
   );
 }
