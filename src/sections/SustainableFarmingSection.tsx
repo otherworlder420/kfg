@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Check, Sprout, Users, MapPin, TrendingUp } from "lucide-react";
 import { FARMING_SECTION } from "@/data/content";
 import SectionLabel from "@/components/SectionLabel";
+import OptimizedImage from "@/components/OptimizedImage";
 import { SectionDecoration } from "@/components/GoldDecorations";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -59,7 +60,7 @@ export default function SustainableFarmingSection() {
           {/* Images */}
           <div className="farm-reveal space-y-4">
             <div className="rounded-xl overflow-hidden shadow-card">
-              <img
+              <OptimizedImage
                 src={FARMING_SECTION.image}
                 alt="Cambodian farmers in rice paddies"
                 width={800}
@@ -70,7 +71,7 @@ export default function SustainableFarmingSection() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-xl overflow-hidden shadow-card">
-                <img
+                <OptimizedImage
                   src={FARMING_SECTION.farmerHandsImage}
                   alt="Farmer holding rice stalks"
                   width={800}
@@ -80,7 +81,7 @@ export default function SustainableFarmingSection() {
                 />
               </div>
               <div className="rounded-xl overflow-hidden shadow-card">
-                <img
+                <OptimizedImage
                   src={FARMING_SECTION.aerialImage}
                   alt="Aerial view of contract farming land"
                   width={800}

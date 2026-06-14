@@ -1,5 +1,6 @@
 import { useEffect, useCallback } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import OptimizedImage from "@/components/OptimizedImage";
 
 interface LightboxImage {
   src: string;
@@ -101,7 +102,7 @@ export default function CertificateLightbox({
         className="relative max-w-[90vw] max-h-[85vh] flex flex-col items-center"
         onClick={(e) => e.stopPropagation()}
       >
-        <img
+        <OptimizedImage
           src={currentImage.src}
           alt={currentImage.title}
           className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"

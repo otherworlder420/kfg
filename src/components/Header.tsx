@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Menu, MessageCircle, Globe } from "lucide-react";
 import { useApp } from "@/context/AppContext";
+import OptimizedImage from "@/components/OptimizedImage";
 import { NAV_LINKS, COMPANY } from "@/data/content";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { useGoogleTranslate } from "@/hooks/useGoogleTranslate";
@@ -64,7 +65,7 @@ export default function Header() {
           <Link to="/" className="flex items-center gap-3 group">
             <img src={showScrolled ? COMPANY.logo : COMPANY.logoWhite} alt={`${COMPANY.name} logo`} className="h-11 w-auto" />
             <div className={`w-px h-8 ${showScrolled ? "bg-dark-200" : "bg-white/30"}`} />
-            <img src="/images/brcgs-logo.png" alt="BRCGS Certified" className="h-8 w-auto opacity-90" />
+            <OptimizedImage src="/images/brcgs-logo.png" alt="BRCGS Certified" className="h-8 w-auto opacity-90" />
           </Link>
 
           {/* Desktop Navigation */}

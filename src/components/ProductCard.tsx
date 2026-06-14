@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import OptimizedImage from "@/components/OptimizedImage";
 import type { Product } from "@/types";
 
 interface ProductCardProps {
@@ -14,7 +15,7 @@ export default function ProductCard({ product }: ProductCardProps) {
     >
       {/* Image */}
       <div className="aspect-[4/3] overflow-hidden">
-        <img
+        <OptimizedImage
           src={product.image}
           alt={product.name}
           width={800}

@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Heart } from "lucide-react";
 import { CSR_SECTION } from "@/data/content";
 import SectionLabel from "@/components/SectionLabel";
+import OptimizedImage from "@/components/OptimizedImage";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,9 +45,11 @@ export default function CSRSection() {
               className="csr-reveal bg-cream-100 rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300"
             >
               <div className="aspect-[16/9] overflow-hidden">
-                <img
+                <OptimizedImage
                   src={p.image}
                   alt={p.name}
+                  width={800}
+                  height={450}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-600"
                   loading="lazy"
                 />

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { COMPANY } from "@/data/content";
 import { useApp } from "@/context/AppContext";
+import OptimizedImage from "@/components/OptimizedImage";
 
 const footerColumns = [
   {
@@ -44,7 +45,7 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 <img src={COMPANY.logoWhite} alt={`${COMPANY.name} logo`} className="h-12 w-auto" />
                 <div className="w-px h-8 bg-dark-600" />
-                <img src="/images/brcgs-logo.png" alt="BRCGS Certified" className="h-9 w-auto opacity-80" />
+                <OptimizedImage src="/images/brcgs-logo.png" alt="BRCGS Certified" className="h-9 w-auto opacity-80" />
               </div>
             </div>
             <p className="text-dark-300 text-sm leading-relaxed">{COMPANY.tagline}</p>

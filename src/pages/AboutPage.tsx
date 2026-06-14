@@ -8,6 +8,7 @@ import { COMPANY } from "@/data/content";
 import SectionLabel from "@/components/SectionLabel";
 import { useApp } from "@/context/AppContext";
 import CertificateLightbox from "@/components/CertificateLightbox";
+import OptimizedImage from "@/components/OptimizedImage";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -182,7 +183,7 @@ export default function AboutPage() {
                         }}
                         className={`inline-block mt-3 group text-left ${isLeft ? "ml-auto" : "mr-auto"}`}
                       >
-                        <img
+                        <OptimizedImage
                           src={item.certificateImage}
                           alt={`${item.title} certificate`}
                           width={160}
@@ -207,7 +208,7 @@ export default function AboutPage() {
                         }}
                         className="inline-block mt-3 group text-left"
                       >
-                        <img
+                        <OptimizedImage
                           src={item.certificateImage}
                           alt={`${item.title} certificate`}
                           width={128}

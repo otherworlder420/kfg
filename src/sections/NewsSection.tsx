@@ -5,6 +5,7 @@ import { ArrowRight, Calendar, Tag } from "lucide-react";
 import { Link } from "react-router-dom";
 import { NEWS_SECTION, NEWS_ARTICLES } from "@/data/content";
 import SectionLabel from "@/components/SectionLabel";
+import OptimizedImage from "@/components/OptimizedImage";
 import { SectionDecoration } from "@/components/GoldDecorations";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -54,7 +55,7 @@ export default function NewsSection() {
               className="group block bg-cream-100 rounded-xl overflow-hidden border border-dark-200 shadow-card hover:shadow-card-hover transition-all duration-300"
             >
               <div className="aspect-[16/9] overflow-hidden">
-                <img
+                <OptimizedImage
                   src={NEWS_ARTICLES[0].image}
                   alt={NEWS_ARTICLES[0].title}
                   width={800}
@@ -94,7 +95,7 @@ export default function NewsSection() {
                   to={`/news/${article.id}`}
                   className="group flex gap-4 bg-cream-100 rounded-xl overflow-hidden border border-dark-200 shadow-card hover:shadow-card-hover transition-all duration-300 p-4"
                 >
-                  <img
+                  <OptimizedImage
                     src={article.image}
                     alt={article.title}
                     width={96}
