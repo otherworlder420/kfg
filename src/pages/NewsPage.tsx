@@ -356,12 +356,8 @@ function NewsListing() {
       );
     }
 
-    // Sort: featured first, then by date desc
-    result.sort((a, b) => {
-      if (a.featured && !b.featured) return -1;
-      if (!a.featured && b.featured) return 1;
-      return new Date(b.date).getTime() - new Date(a.date).getTime();
-    });
+    // Sort: newest first
+    result.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
     return result;
   }, [activeCategory, activeTag, searchQuery]);

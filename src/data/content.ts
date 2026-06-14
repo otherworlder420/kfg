@@ -396,7 +396,7 @@ export const NEWS_ARTICLES = [
 
 KFG's export portfolio includes its flagship SKO (Sen Kra Ob) and Phka Rumduol Premium Cambodian rice varieties, both classified under the premium rice category. As premium-grade products, these varieties are not subject to the Philippines' maximum recommended selling price cap of 50 pesos, reflecting their superior quality and market positioning. This distinction underscores Cambodia's growing reputation as a source of world-class aromatic rice on the global stage.
 
-KFG is honored to contribute to Cambodia's ambitious national goal of reaching 1,000,000 metric tons of rice exports, a milestone championed by former Prime Minister Hun Sen. The company remains steadfast in its mission to support Cambodia's agricultural sector, empower local farming communities, and elevate the nation's standing as a trusted global rice supplier. With continued investment in quality, sustainability, and international partnerships, KFG looks forward to a bright and prosperous future for Cambodia's rice industry.`,
+KFG is honored to contribute to Cambodia's ambitious national goal of reaching 1,000,000 metric tons of rice exports, a milestone championed by Samdech Techo HUN SEN. The company remains steadfast in its mission to support Cambodia's agricultural sector, empower local farming communities, and elevate the nation's standing as a trusted global rice supplier. With continued investment in quality, sustainability, and international partnerships, KFG looks forward to a bright and prosperous future for Cambodia's rice industry.`,
     date: "June 1, 2026",
     category: "KFG News",
     categoryId: "kfg-news",
