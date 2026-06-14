@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle, Loader2, ArrowRight } from "lucide-react";
 import { COMPANY, FORM_ENDPOINT } from "@/data/content";
@@ -83,6 +84,11 @@ export default function ContactPage() {
 
   return (
     <div className="pt-[72px]">
+      <Helmet>
+        <title>Contact Us | Khmer Foods Group</title>
+        <meta name="description" content="Get in touch with Khmer Foods Group for rice export quotes, product samples and facility tours. Two mills in Battambang and Kampong Speu, Cambodia." />
+        <link rel="canonical" href="https://khmerfoods.com/#/contact" />
+      </Helmet>
       {/* Hero */}
       <div className="relative bg-dark-900 py-20 md:py-28">
         <div className="absolute inset-0 opacity-10">

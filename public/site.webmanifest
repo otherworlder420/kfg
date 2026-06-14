@@ -1,0 +1,21 @@
+{
+  "name": "Khmer Foods Group",
+  "short_name": "KFG",
+  "description": "Cambodian rice miller and global exporter since 1994. Premium jasmine rice, white rice, brown rice, and byproducts.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a1a1a",
+  "icons": [
+    {
+      "src": "/images/khmer-logo-favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/khmer-logo-favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

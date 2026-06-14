@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { useEffect } from "react";
 import { ArrowLeft, ArrowRight, Check, Leaf, Award, Clock, Ruler, Palette, Wind, Wheat } from "lucide-react";
 import { useApp } from "@/context/AppContext";
@@ -310,6 +311,15 @@ export default function ProductDetailPage() {
 
   return (
     <div className="pt-[72px]">
+      <Helmet>
+        <title>{`${product.name} | Khmer Foods Group`}</title>
+        <meta name="description" content={product.description} />
+        <link rel="canonical" href={`https://khmerfoods.com/#/products/${product.id}`} />
+        <meta property="og:type" content="product" />
+        <meta property="og:title" content={product.name} />
+        <meta property="og:description" content={product.description} />
+        <meta property="og:image" content={`https://khmerfoods.com${product.image}`} />
+      </Helmet>
       {/* Breadcrumb */}
       <div className="bg-cream-200 border-b border-dark-200">
         <div className="container-main page-padding py-3 flex items-center gap-2 text-sm">
@@ -327,7 +337,7 @@ export default function ProductDetailPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Product Image */}
             <div className="rounded-xl overflow-hidden shadow-card">
-              <img src={product.image} alt={product.name} className="w-full aspect-[4/3] object-cover" />
+              <img src={product.image} alt={product.name} width={800} height={600} className="w-full aspect-[4/3] object-cover" />
             </div>
 
             {/* Product Info */}
@@ -464,7 +474,7 @@ export default function ProductDetailPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {related.map((rp) => (
               <Link to={`/products/${rp.id}`} key={rp.id} className="group flex gap-4 bg-cream-100 rounded-xl p-4 shadow-card hover:shadow-card-hover transition-all duration-300">
-                <img src={rp.image} alt={rp.name} className="w-24 h-24 rounded-lg object-cover shrink-0" />
+                <img src={rp.image} alt={rp.name} width={96} height={96} className="w-24 h-24 rounded-lg object-cover shrink-0" />
                 <div>
                   <h3 className="font-display text-lg font-medium text-dark-800 group-hover:text-gold-500 transition-colors">{rp.name}</h3>
                   <p className="text-sm text-dark-600 mt-1 line-clamp-2">{rp.description}</p>

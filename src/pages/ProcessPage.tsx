@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Helmet } from "react-helmet-async";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
@@ -156,6 +157,11 @@ export default function ProcessPage() {
 
   return (
     <div className="pt-[72px]" ref={sectionRef}>
+      <Helmet>
+        <title>Our Infrastructure & Milling Process | Khmer Foods Group</title>
+        <meta name="description" content="See our rice milling infrastructure in Battambang and Kampong Speu, private railway sidings, and the 13-step process from paddy intake to port export." />
+        <link rel="canonical" href="https://khmerfoods.com/#/process" />
+      </Helmet>
       {/* Hero */}
       <div className="relative bg-dark-900 py-20 md:py-28">
         <div className="absolute inset-0 opacity-10">

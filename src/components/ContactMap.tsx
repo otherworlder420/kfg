@@ -25,14 +25,36 @@ const MILL_LOCATIONS = [
 ];
 
 export default function ContactMap() {
+  const wrapperRef = useRef<HTMLElement>(null);
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<any>(null);
   const markersRef = useRef<Record<string, any>>({});
   const infoWindowsRef = useRef<Record<string, any>>({});
+  const [isVisible, setIsVisible] = useState(false);
   const [isMapLoaded, setIsMapLoaded] = useState(false);
 
+  // Lazy-load map when it scrolls into view
   useEffect(() => {
-    if (!mapRef.current) return;
+    const el = wrapperRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px" }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  // Load Google Maps and initialize map
+  useEffect(() => {
+    if (!isVisible || !mapRef.current) return;
 
     const initMap = () => {
       if (!mapRef.current || !(window as any).google?.maps) return;
@@ -101,7 +123,7 @@ export default function ContactMap() {
       }
       delete (window as any).initGoogleMap;
     };
-  }, []);
+  }, [isVisible]);
 
   const openInfoWindow = (id: string) => {
     const marker = markersRef.current[id];
@@ -113,13 +135,13 @@ export default function ContactMap() {
   };
 
   return (
-    <section className="bg-cream-200">
+    <section ref={wrapperRef} className="bg-cream-200">
       <div className="h-[400px] w-full bg-dark-200 relative">
-        <div ref={mapRef} className="w-full h-full" />
+        {isVisible && <div ref={mapRef} className="w-full h-full" />}
 
         {!isMapLoaded && (
           <div className="absolute inset-0 flex items-center justify-center bg-dark-200">
-            <p className="text-cream-100/60 text-sm">Loading map…</p>
+            <p className="text-cream-100/60 text-sm">{isVisible ? "Loading map…" : "Scroll to view map"}</p>
           </div>
         )}
 

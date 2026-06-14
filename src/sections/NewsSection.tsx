@@ -57,6 +57,8 @@ export default function NewsSection() {
                 <img
                   src={NEWS_ARTICLES[0].image}
                   alt={NEWS_ARTICLES[0].title}
+                  width={800}
+                  height={450}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-600"
                   loading="lazy"
                 />
@@ -95,6 +97,8 @@ export default function NewsSection() {
                   <img
                     src={article.image}
                     alt={article.title}
+                    width={96}
+                    height={96}
                     className="w-24 h-24 rounded-lg object-cover shrink-0"
                     loading="lazy"
                   />

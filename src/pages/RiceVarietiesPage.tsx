@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -120,6 +121,11 @@ export default function RiceVarietiesPage() {
 
   return (
     <div className="pt-[72px]">
+      <Helmet>
+        <title>Rice Varieties | Khmer Foods Group</title>
+        <meta name="description" content="Explore our premium Cambodian rice varieties: Phka Rumduol, SKO, SRO, OM5451, brown rice, red jasmine, broken rice and Neang Khon. Export quality, globally certified." />
+        <link rel="canonical" href="https://khmerfoods.com/#/rice-varieties" />
+      </Helmet>
       {/* Hero Banner */}
       <div className="relative bg-dark-900 py-20 md:py-28">
         <div className="absolute inset-0 opacity-10">

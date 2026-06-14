@@ -206,7 +206,7 @@ function ArticleDetail({ article }: { article: NewsArticle }) {
           {/* Hero Image */}
           <div className="container-main page-padding max-w-[900px] mx-auto py-8">
             <figure className="mb-8">
-              <img src={article.image} alt={article.title} className="w-full aspect-[16/9] object-cover rounded-sm shadow-lg" />
+              <img src={article.image} alt={article.title} width={800} height={450} className="w-full aspect-[16/9] object-cover rounded-sm shadow-lg" />
               <figcaption className="text-xs text-dark-400 mt-2 text-center italic font-serif">
                 {article.title} — {article.date}
               </figcaption>
@@ -253,7 +253,7 @@ function ArticleDetail({ article }: { article: NewsArticle }) {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {article.gallery.map((img, i) => (
                     <figure key={i} className="rounded-sm overflow-hidden shadow-md bg-dark-100">
-                      <img src={img} alt={`${article.title} — gallery image ${i + 1}`} className="w-full aspect-[4/3] object-contain" />
+                      <img src={img} alt={`${article.title} — gallery image ${i + 1}`} width={800} height={600} className="w-full aspect-[4/3] object-contain" />
                     </figure>
                   ))}
                 </div>
@@ -291,7 +291,7 @@ function ArticleDetail({ article }: { article: NewsArticle }) {
                       className="group bg-cream-100 rounded-lg overflow-hidden border border-dark-200 hover:shadow-md transition-all"
                     >
                       <div className="overflow-hidden aspect-[16/10]">
-                        <img src={ra.image} alt={ra.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                        <img src={ra.image} alt={ra.title} width={400} height={300} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                       </div>
                       <div className="p-4">
                         <div className="flex items-center gap-2 text-xs text-dark-400 mb-2">
@@ -536,6 +536,8 @@ function NewsListing() {
                     <img
                       src={featuredArticle.image}
                       alt={featuredArticle.title}
+                      width={800}
+                      height={500}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-600"
                     />
                   </div>
@@ -631,6 +633,8 @@ function ArticleCard({ article }: { article: NewsArticle }) {
         <img
           src={article.image}
           alt={article.title}
+          width={800}
+          height={500}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           loading="lazy"
         />

@@ -40,7 +40,7 @@ const LANGUAGES: { code: string; label: string }[] = [
 ];
 
 export default function GoogleTranslateDropdown({ onSelect }: Props) {
-  const { currentLang, translate } = useGoogleTranslate();
+  const { currentLang, translate } = useGoogleTranslate({ loadOnMount: true });
 
   const handleClick = (code: string) => {
     if (code === "en") {

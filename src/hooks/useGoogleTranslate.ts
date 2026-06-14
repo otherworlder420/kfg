@@ -84,60 +84,72 @@ function loadGTScript(): Promise<void> {
   });
 }
 
-export function useGoogleTranslate() {
+interface UseGoogleTranslateOptions {
+  loadOnMount?: boolean;
+}
+
+export function useGoogleTranslate(options: UseGoogleTranslateOptions = {}) {
+  const { loadOnMount = false } = options;
   const [currentLang, setCurrentLang] = useState(getLangFromCookie);
+  const [isLoaded, setIsLoaded] = useState(false);
   const comboRef = useRef<HTMLSelectElement | null>(null);
 
-  // Initialize Google Translate on mount
-  useEffect(() => {
-    const init = async () => {
-      await loadGTScript();
-      const gt = (window as any).google?.translate;
-      if (!gt?.TranslateElement) return;
+  const initialize = useCallback(async () => {
+    if (isLoaded) return;
 
-      // Create hidden container
-      let hiddenDiv = document.getElementById("gt_hidden_container");
-      if (!hiddenDiv) {
-        hiddenDiv = document.createElement("div");
-        hiddenDiv.id = "gt_hidden_container";
-        hiddenDiv.style.display = "none";
-        document.body.appendChild(hiddenDiv);
-      }
+    await loadGTScript();
+    const gt = (window as any).google?.translate;
+    if (!gt?.TranslateElement) return;
 
-      // Initialize if not already
-      if (!hiddenDiv.dataset.initialized) {
-        new gt.TranslateElement(
-          {
-            pageLanguage: "en",
-            includedLanguages: Object.keys(LANGUAGE_MAP).join(","),
-            layout: gt.TranslateElement.InlineLayout.NONE,
-          },
-          hiddenDiv
-        );
-        hiddenDiv.dataset.initialized = "true";
-      }
+    // Create hidden container
+    let hiddenDiv = document.getElementById("gt_hidden_container");
+    if (!hiddenDiv) {
+      hiddenDiv = document.createElement("div");
+      hiddenDiv.id = "gt_hidden_container";
+      hiddenDiv.style.display = "none";
+      document.body.appendChild(hiddenDiv);
+    }
 
-      // Find the select element
-      const waitForCombo = () => {
-        const combo = document.querySelector(".goog-te-combo") as HTMLSelectElement;
-        if (combo) {
-          comboRef.current = combo;
-          // Restore translation from cookie
-          const savedLang = getLangFromCookie();
-          if (savedLang !== "en" && combo.value !== savedLang) {
-            combo.value = savedLang;
-            combo.dispatchEvent(new Event("change"));
-            setCurrentLang(savedLang);
-          }
-        } else {
-          setTimeout(waitForCombo, 200);
+    // Initialize if not already
+    if (!hiddenDiv.dataset.initialized) {
+      new gt.TranslateElement(
+        {
+          pageLanguage: "en",
+          includedLanguages: Object.keys(LANGUAGE_MAP).join(","),
+          layout: gt.TranslateElement.InlineLayout.NONE,
+        },
+        hiddenDiv
+      );
+      hiddenDiv.dataset.initialized = "true";
+    }
+
+    // Find the select element
+    const waitForCombo = () => {
+      const combo = document.querySelector(".goog-te-combo") as HTMLSelectElement;
+      if (combo) {
+        comboRef.current = combo;
+        // Restore translation from cookie
+        const savedLang = getLangFromCookie();
+        if (savedLang !== "en" && combo.value !== savedLang) {
+          combo.value = savedLang;
+          combo.dispatchEvent(new Event("change"));
+          setCurrentLang(savedLang);
         }
-      };
-      waitForCombo();
+      } else {
+        setTimeout(waitForCombo, 200);
+      }
     };
+    waitForCombo();
 
-    init();
-  }, []);
+    setIsLoaded(true);
+  }, [isLoaded]);
+
+  // Load on mount only when requested (e.g. inside the language dropdown)
+  useEffect(() => {
+    if (loadOnMount) {
+      initialize();
+    }
+  }, [loadOnMount, initialize]);
 
   // Poll cookie for changes (from other tabs, etc.)
   useEffect(() => {
@@ -215,5 +227,5 @@ export function useGoogleTranslate() {
 
   const displayCode = LANGUAGE_MAP[currentLang] || "EN";
 
-  return { currentLang, displayCode, translate };
+  return { currentLang, displayCode, translate, isLoaded, initialize };
 }

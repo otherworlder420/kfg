@@ -62,6 +62,8 @@ export default function SustainableFarmingSection() {
               <img
                 src={FARMING_SECTION.image}
                 alt="Cambodian farmers in rice paddies"
+                width={800}
+                height={450}
                 className="w-full aspect-[16/9] object-cover"
                 loading="lazy"
               />
@@ -71,6 +73,8 @@ export default function SustainableFarmingSection() {
                 <img
                   src={FARMING_SECTION.farmerHandsImage}
                   alt="Farmer holding rice stalks"
+                  width={800}
+                  height={600}
                   className="w-full aspect-[4/3] object-cover"
                   loading="lazy"
                 />
@@ -79,6 +83,8 @@ export default function SustainableFarmingSection() {
                 <img
                   src={FARMING_SECTION.aerialImage}
                   alt="Aerial view of contract farming land"
+                  width={800}
+                  height={600}
                   className="w-full aspect-[4/3] object-cover"
                   loading="lazy"
                 />

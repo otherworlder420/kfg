@@ -47,6 +47,8 @@ export default function ProcessStepCard({ step, title, description, image }: Pro
         <img
           src={image}
           alt={title}
+          width={800}
+          height={600}
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-600"
           loading="lazy"
         />

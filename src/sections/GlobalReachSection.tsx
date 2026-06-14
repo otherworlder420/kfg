@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowRight } from "lucide-react";
@@ -119,13 +120,13 @@ export default function GlobalReachSection() {
           <p className="text-base text-white/70 mt-6 max-w-[600px] mx-auto leading-relaxed font-light">
             {GLOBAL_SECTION.description}
           </p>
-          <a
-            href="#/global-reach"
+          <Link
+            to="/global-reach"
             className="inline-flex items-center gap-2 mt-8 text-gold-400 font-medium text-sm link-underline hover:text-gold-500 transition-colors"
           >
             {GLOBAL_SECTION.ctaText}
             <ArrowRight size={14} />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

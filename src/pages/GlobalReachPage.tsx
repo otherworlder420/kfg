@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -102,6 +103,11 @@ export default function GlobalReachPage() {
 
   return (
     <div className="pt-[72px]" ref={sectionRef}>
+      <Helmet>
+        <title>Global Reach & Export Markets | Khmer Foods Group</title>
+        <meta name="description" content="Khmer Foods Group exports premium Cambodian rice to Europe, Asia, North America, Oceania, Africa and the Middle East. FOB, CIF, CFR, EXW trade terms available." />
+        <link rel="canonical" href="https://khmerfoods.com/#/global-reach" />
+      </Helmet>
       {/* Hero */}
       <div className="relative py-24 md:py-32 overflow-hidden">
         <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover" poster="/images/global-logistics-poster.jpg">

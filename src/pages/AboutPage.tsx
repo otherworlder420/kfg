@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -61,6 +62,11 @@ export default function AboutPage() {
 
   return (
     <div className="pt-[72px]" ref={sectionRef}>
+      <Helmet>
+        <title>About Us | Khmer Foods Group</title>
+        <meta name="description" content="Learn about Khmer Foods Group — three generations of Cambodian rice heritage, 7x World's Best Rice winner, BRCGS, ISO 22000 and HACCP certified." />
+        <link rel="canonical" href="https://khmerfoods.com/#/about" />
+      </Helmet>
       {/* Hero */}
       <div className="relative bg-dark-900 py-20 md:py-28">
         <div className="absolute inset-0 opacity-10">
@@ -105,6 +111,8 @@ export default function AboutPage() {
               <img
                 src="/images/process/drying.jpg"
                 alt="Khmer Foods Group rice processing facility"
+                width={800}
+                height={600}
                 className="w-full aspect-[4/3] object-cover"
               />
             </div>
@@ -177,6 +185,8 @@ export default function AboutPage() {
                         <img
                           src={item.certificateImage}
                           alt={`${item.title} certificate`}
+                          width={160}
+                          height={120}
                           className="w-40 h-auto rounded-lg border border-dark-200 shadow-sm group-hover:shadow-md group-hover:border-gold-400 transition-all duration-300"
                         />
                         <span className="block text-xs text-gold-500 mt-1 group-hover:underline">View certificate</span>
@@ -200,6 +210,8 @@ export default function AboutPage() {
                         <img
                           src={item.certificateImage}
                           alt={`${item.title} certificate`}
+                          width={128}
+                          height={96}
                           className="w-32 h-auto rounded-lg border border-dark-200 shadow-sm group-hover:shadow-md group-hover:border-gold-400 transition-all duration-300"
                         />
                         <span className="block text-xs text-gold-500 mt-1 group-hover:underline">View certificate</span>
