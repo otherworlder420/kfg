@@ -95,14 +95,16 @@ export default function NewsSection() {
                   to={`/news/${article.id}`}
                   className="group flex gap-4 bg-cream-100 rounded-xl overflow-hidden border border-dark-200 shadow-card hover:shadow-card-hover transition-all duration-300 p-4"
                 >
-                  <OptimizedImage
-                    src={article.image}
-                    alt={article.title}
-                    width={112}
-                    height={80}
-                    className="w-28 h-20 rounded-lg object-cover shrink-0"
-                    loading="lazy"
-                  />
+                  <div className="w-28 h-20 shrink-0 overflow-hidden rounded-lg bg-cream-200">
+                    <OptimizedImage
+                      src={article.image}
+                      alt={article.title}
+                      width={112}
+                      height={80}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
                   <div>
                     <div className="flex items-center gap-2 mb-1">
                       <span className="text-xs text-dark-400">{article.date}</span>

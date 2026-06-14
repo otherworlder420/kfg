@@ -475,7 +475,9 @@ export default function ProductDetailPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {related.map((rp) => (
               <Link to={`/products/${rp.id}`} key={rp.id} className="group flex gap-4 bg-cream-100 rounded-xl p-4 shadow-card hover:shadow-card-hover transition-all duration-300">
-                <OptimizedImage src={rp.image} alt={rp.name} width={96} height={96} className="w-24 h-24 rounded-lg object-cover shrink-0" />
+                <div className="w-24 h-24 shrink-0 overflow-hidden rounded-lg bg-cream-200">
+                  <OptimizedImage src={rp.image} alt={rp.name} width={96} height={96} className="w-full h-full object-cover" />
+                </div>
                 <div>
                   <h3 className="font-display text-lg font-medium text-dark-800 group-hover:text-gold-500 transition-colors">{rp.name}</h3>
                   <p className="text-sm text-dark-600 mt-1 line-clamp-2">{rp.description}</p>
