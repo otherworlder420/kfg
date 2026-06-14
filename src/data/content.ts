@@ -40,7 +40,7 @@ export const HERO = {
     "Milling Cambodia's finest rice since 1994, our company delivers three decades of trusted quality on behalf of local farmers.",
   primaryCta: "Explore Our Rice",
   secondaryCta: "Watch Video",
-  video: "/videos/hero-train.mp4",
+  video: "/videos/hero-train-720p.mp4",
 } as const;
 
 // --- ABOUT US (Homepage) ---

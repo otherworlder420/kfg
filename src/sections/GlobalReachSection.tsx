@@ -7,6 +7,7 @@ import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { GLOBAL_SECTION, STATISTICS } from "@/data/content";
 import StatItem from "@/components/StatItem";
 import WorldMapSVG from "@/components/WorldMapSVG";
+import LazyVideo from "@/components/LazyVideo";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -69,18 +70,16 @@ export default function GlobalReachSection() {
       id="global"
       className="relative py-32 md:py-40 overflow-hidden"
     >
-      {/* Video Background */}
+      {/* Video Background - lazy loaded */}
       <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
+        <LazyVideo
+          sources={[
+            { src: "/videos/global-logistics-720p.webm", type: "video/webm" },
+            { src: "/videos/global-logistics-720p.mp4", type: "video/mp4" },
+          ]}
           poster="/images/global-logistics-poster.jpg"
           className="w-full h-full object-cover"
-        >
-          <source src="/videos/global-logistics.mp4" type="video/mp4" />
-        </video>
+        />
       </div>
 
       {/* Dark Overlay */}

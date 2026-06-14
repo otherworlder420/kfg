@@ -111,7 +111,8 @@ export default function GlobalReachPage() {
       {/* Hero */}
       <div className="relative py-24 md:py-32 overflow-hidden">
         <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover" poster="/images/global-logistics-poster.jpg">
-          <source src="/videos/global-logistics.mp4" type="video/mp4" />
+          <source src="/videos/global-logistics-720p.webm" type="video/webm" />
+          <source src="/videos/global-logistics-720p.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-dark-950/75" />
         <div className="container-main page-padding relative z-10">

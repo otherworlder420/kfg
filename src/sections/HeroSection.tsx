@@ -35,7 +35,8 @@ export default function HeroSection() {
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full">
         <video autoPlay muted loop playsInline className="w-full h-full object-cover" poster="/images/hero-background.jpg">
-          <source src={HERO.video} type="video/mp4" />
+          <source src="/videos/hero-train-720p.webm" type="video/webm" />
+          <source src="/videos/hero-train-720p.mp4" type="video/mp4" />
         </video>
       </div>
 
