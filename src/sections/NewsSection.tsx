@@ -98,9 +98,9 @@ export default function NewsSection() {
                   <OptimizedImage
                     src={article.image}
                     alt={article.title}
-                    width={96}
-                    height={96}
-                    className="w-24 h-24 rounded-lg object-cover shrink-0"
+                    width={112}
+                    height={80}
+                    className="w-28 h-20 rounded-lg object-cover shrink-0"
                     loading="lazy"
                   />
                   <div>
