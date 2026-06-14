@@ -51,7 +51,7 @@ const PROCESS_DETAILS = [
     description: "White rice goes through Satake polishing machines to remove other particles, giving the rice a shinier appearance and premium finish.",
     image: "/images/process/polishing.jpg",
     equipment: "Satake Water Jet Polishers, Mist Polishers",
-    specs: { "Polishing Grade": "Triple Polish", "Gloss Level": "High", "Capacity": "600+ MT/day" },
+    specs: { "Polishing": "4-5 Passes", "Gloss Level": "High", "Capacity": "600+ MT/day" },
     quality: "Water polishing creates a pearl-like sheen preferred in premium markets",
   },
   {
@@ -164,78 +164,13 @@ export default function ProcessPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-dark-900/90 to-dark-800/70" />
         <div className="container-main page-padding relative z-10">
           <SectionLabel label="Our Facility" light />
-          <h1 className="font-display text-4xl md:text-5xl text-white mt-4">Process Flow</h1>
+          <h1 className="font-display text-4xl md:text-5xl text-white mt-4">Our Infrastructure</h1>
           <p className="text-cream-100/70 mt-4 max-w-2xl leading-relaxed font-light">
-            Our milling lines are equipped with Buhler and Satake machinery, featuring state-of-the-art 
-            technology from paddy intake to container export. 13 steps from farm to port.
+            Two rice mills in Battambang and Kampong Speu province, each with private railway sidings 
+            built into our warehouses and connected directly to Cambodia's deep seaport.
           </p>
         </div>
       </div>
-
-      {/* Timeline */}
-      <section className="bg-cream-100 py-16">
-        <div className="container-main page-padding">
-          <div className="relative">
-            {/* Center line - desktop only */}
-            <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gold-100 -translate-x-1/2" />
-
-            {PROCESS_DETAILS.map((step, index) => {
-              const isLeft = index % 2 === 0;
-              return (
-                <div
-                  key={step.number}
-                  className={`process-step relative grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 last:mb-0 items-center`}
-                >
-                  {/* Image */}
-                  <div className={`${isLeft ? "lg:order-1" : "lg:order-2"}`}>
-                    <div className="rounded-xl overflow-hidden shadow-card group">
-                      <img
-                        src={step.image}
-                        alt={step.title}
-                        className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-600"
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className={`${isLeft ? "lg:order-2 lg:pl-12" : "lg:order-1 lg:pr-12"}`}>
-                    <div className="flex items-center gap-4 mb-4">
-                      <span className="w-16 h-12 rounded-full bg-gold-400 flex items-center justify-center text-white text-xs font-medium uppercase tracking-wider shrink-0">
-                        Step {step.number}
-                      </span>
-                      <div>
-                        <h2 className="font-display text-2xl font-medium text-dark-800">{step.title}</h2>
-                        <p className="text-xs text-dark-400">{step.equipment}</p>
-                      </div>
-                    </div>
-                    <p className="text-dark-600 leading-relaxed font-light">{step.description}</p>
-
-                    {/* Specs */}
-                    <div className="mt-4 grid grid-cols-3 gap-3">
-                      {Object.entries(step.specs).map(([key, value]) => (
-                        <div key={key} className="bg-cream-200 rounded-lg p-3 text-center">
-                          <p className="text-xs text-dark-400">{key}</p>
-                          <p className="text-sm font-medium text-dark-800">{value}</p>
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* Quality Note */}
-                    <div className="mt-4 flex items-start gap-3 bg-cream-100 border border-gold-100 rounded-lg p-4">
-                      <CheckCircle size={18} className="text-gold-400 shrink-0 mt-0.5" />
-                      <p className="text-sm text-dark-700">{step.quality}</p>
-                    </div>
-                  </div>
-
-                  {/* Center dot - desktop */}
-                  <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-gold-400 border-4 border-white shadow-lg" />
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
 
       {/* Rice Mills & Railway Network */}
       <section className="bg-cream-200 py-16">
@@ -294,6 +229,79 @@ export default function ProcessPage() {
             <p className="text-cream-100/70 max-w-3xl mx-auto font-light leading-relaxed">
               Both mills feature private railway sidings built directly into our warehouses, connecting the two facilities together and linking them directly to Cambodia's deep seaport. This integrated rail infrastructure enables us to export huge volumes efficiently — up to <strong className="text-white">300 containers per week</strong>.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline */}
+      <section className="bg-cream-100 py-16">
+        <div className="container-main page-padding">
+          <div className="text-center mb-12">
+            <SectionLabel label="Milling Process" />
+            <h2 className="font-display text-3xl font-medium text-dark-800 mt-4">Our Process Flow</h2>
+            <p className="text-dark-600 mt-4 max-w-2xl mx-auto font-light">
+              Our milling lines are equipped with Buhler and Satake machinery, featuring state-of-the-art
+              technology from paddy intake to container export. 13 steps from farm to port.
+            </p>
+          </div>
+          <div className="relative">
+            {/* Center line - desktop only */}
+            <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gold-100 -translate-x-1/2" />
+
+            {PROCESS_DETAILS.map((step, index) => {
+              const isLeft = index % 2 === 0;
+              return (
+                <div
+                  key={step.number}
+                  className={`process-step relative grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 last:mb-0 items-center`}
+                >
+                  {/* Image */}
+                  <div className={`${isLeft ? "lg:order-1" : "lg:order-2"}`}>
+                    <div className="rounded-xl overflow-hidden shadow-card group">
+                      <img
+                        src={step.image}
+                        alt={step.title}
+                        className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-600"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className={`${isLeft ? "lg:order-2 lg:pl-12" : "lg:order-1 lg:pr-12"}`}>
+                    <div className="flex items-center gap-4 mb-4">
+                      <span className="w-16 h-12 rounded-full bg-gold-400 flex items-center justify-center text-white text-xs font-medium uppercase tracking-wider shrink-0">
+                        Step {step.number}
+                      </span>
+                      <div>
+                        <h2 className="font-display text-2xl font-medium text-dark-800">{step.title}</h2>
+                        <p className="text-xs text-dark-400">{step.equipment}</p>
+                      </div>
+                    </div>
+                    <p className="text-dark-600 leading-relaxed font-light">{step.description}</p>
+
+                    {/* Specs */}
+                    <div className="mt-4 grid grid-cols-3 gap-3">
+                      {Object.entries(step.specs).map(([key, value]) => (
+                        <div key={key} className="bg-cream-200 rounded-lg p-3 text-center">
+                          <p className="text-xs text-dark-400">{key}</p>
+                          <p className="text-sm font-medium text-dark-800">{value}</p>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Quality Note */}
+                    <div className="mt-4 flex items-start gap-3 bg-cream-100 border border-gold-100 rounded-lg p-4">
+                      <CheckCircle size={18} className="text-gold-400 shrink-0 mt-0.5" />
+                      <p className="text-sm text-dark-700">{step.quality}</p>
+                    </div>
+                  </div>
+
+                  {/* Center dot - desktop */}
+                  <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-gold-400 border-4 border-white shadow-lg" />
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
