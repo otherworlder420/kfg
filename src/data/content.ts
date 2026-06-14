@@ -37,7 +37,7 @@ export const HERO = {
   label: "Khmer Foods Group - A Leading Rice Producer and Exporter",
   title: "From Cambodia's Fields to the World",
   description:
-    "Milling Cambodia's finest rice since 1994, our family delivers three decades of trusted quality on behalf of local farmers.",
+    "Milling Cambodia's finest rice since 1994, our company delivers three decades of trusted quality on behalf of local farmers.",
   primaryCta: "Explore Our Rice",
   secondaryCta: "Watch Video",
   video: "/videos/hero-train.mp4",
@@ -372,7 +372,7 @@ export const CERTIFICATIONS = [
 
 // --- NEWS ---
 export const NEWS_SECTION = {
-  label: "From Our Family",
+  label: "From Our Company",
   title: "News & Stories",
   description: "The latest from our farm, our community, and our journey to share Cambodian rice with the world.",
 } as const;
@@ -488,14 +488,14 @@ In addition to formal milled rice exports, border-traded paddy rice totaled 2,75
     id: "contract-farming-2025",
     title: "2,463 Hectares of Hope: Our New Partnership With Kampong Thom Farmers",
     excerpt:
-      "Two farming cooperatives have joined our family, committing to grow 12,000 tons of premium paddy per harvest — at prices that ensure their families thrive.",
+      "Two farming cooperatives have joined our company, committing to grow 12,000 tons of premium paddy per harvest — at prices that ensure their families thrive.",
     content: `Two farming cooperatives in Kampong Thom province have officially become part of the Khmer Foods Group family, committing to grow and supply 12,000 tons of high-purity SKO, SRO, and OM-5451 paddy varieties per harvest.
 
 Under the warm guidance of the Ministry of Agriculture, Forestry and Fisheries, this partnership ensures our farmers receive prices well above the market rate — because we believe that when our farmers thrive, we all thrive.
 
-The agreement was signed with the blessing of H.E Minister Dith Tina, marking another chapter in our family's three-decade story of growing Cambodian rice with care, respect, and a deep commitment to the land and the people who work it.
+The agreement was signed with the blessing of H.E Minister Dith Tina, marking another chapter in our company's three-decade story of growing Cambodian rice with care, respect, and a deep commitment to the land and the people who work it.
 
-For us, this isn't just business. It's about building a future where every farmer who works with us can send their children to school, care for their families, and pass their knowledge down to the next generation — just as our family has done since 1994.`,
+For us, this isn't just business. It's about building a future where every farmer who works with us can send their children to school, care for their families, and pass their knowledge down to the next generation — just as our company has done since 1994.`,
     date: "April 29, 2025",
     category: "KFG News",
     categoryId: "kfg-news",
@@ -543,7 +543,7 @@ We arrived with trucks full of our finest rice, donations to support the school'
 
 Since 1999, this extraordinary hospital in Siem Reap has provided over 2.5 million medical treatments to Cambodian children — many of them completely free for families who could never afford care otherwise. Surgeries, neonatal care, outpatient services — they do it all, with compassion that rivals their medical expertise.
 
-A portion of every Kroya Brand rice sale goes directly to keeping their doors open. So when you choose our rice for your family, you're not just nourishing your own table — you're helping heal a child across Cambodia.
+A portion of every Kroya Brand rice sale goes directly to keeping their doors open. So when you choose our rice for your company, you're not just nourishing your own table — you're helping heal a child across Cambodia.
 
 That's the kind of relationship we believe in. That's the kind of family we want to be.`,
     date: "December 19, 2024",
@@ -689,7 +689,7 @@ export const QUOTE_FORM = {
   title: "Request FOB Pricing & Milling Specs",
   description: "Tell us about your sourcing requirements, and our export team will respond within 24 hours with FOB pricing, milling specifications, and lead times.",
   successTitle: "Thank You!",
-  successMessage: "Your message has been received! Someone from our family team will reach out to you within 24 hours. We look forward to getting to know you.",
+  successMessage: "Your message has been received! Someone from our company team will reach out to you within 24 hours. We look forward to getting to know you.",
   backButton: "Back to Home",
   submitButton: "Send My Inquiry",
   submittingText: "Sending...",
@@ -706,7 +706,7 @@ export const QUOTE_FORM = {
     destinationPort: { label: "Where should we send it?", placeholder: "e.g., Port of Rotterdam", required: false },
     deliveryTerms: { label: "Preferred shipping terms" },
     specialRequirements: { label: "Anything else we should know?", placeholder: "Tell us about your needs, your market, your story...", required: true },
-    howFound: { label: "How did you find our family?" },
+    howFound: { label: "How did you find our company?" },
   },
 } as const;
 

@@ -18,7 +18,7 @@
   "hero": {
     "label": "Khmer Foods Group — A Cambodian Family Story Since 1994",
     "title": "From Cambodian Farms to the World",
-    "description": "Since 1994, we've partnered with farming cooperatives across Cambodia to mill and export the country's finest rice. Every grain carries the care of our farmers and the quality our family has stood behind for three decades.",
+    "description": "Since 1994, we've partnered with farming cooperatives across Cambodia to mill and export the country's finest rice. Every grain carries the care of our farmers and the quality our company has stood behind for three decades.",
     "exploreRice": "Explore Our Rice",
     "watchVideo": "Watch Video"
   },
@@ -198,7 +198,7 @@
     "attribution": "— The Khmer Foods Group Team"
   },
   "news": {
-    "label": "From Our Family",
+    "label": "From Our Company",
     "title": "News & Stories",
     "description": "The latest from our farm, our community, and our journey to share Cambodian rice with the world.",
     "readMore": "Read more",
@@ -207,9 +207,9 @@
   },
   "form": {
     "title": "Let's Start a Partnership",
-    "description": "Tell us a little about what you're looking for, and a member of our family team will get back to you within 24 hours. We love meeting new people.",
+    "description": "Tell us a little about what you're looking for, and a member of our company team will get back to you within 24 hours. We love meeting new people.",
     "successTitle": "Thank You!",
-    "successMessage": "Your message has been received! Someone from our family team will reach out to you within 24 hours. We look forward to getting to know you.",
+    "successMessage": "Your message has been received! Someone from our company team will reach out to you within 24 hours. We look forward to getting to know you.",
     "backButton": "Back to Home",
     "submitButton": "Send My Inquiry",
     "submitting": "Sending...",
@@ -233,7 +233,7 @@
     "shippingTerms": "Preferred shipping terms",
     "specialRequirements": "Anything else we should know?",
     "specialRequirementsPlaceholder": "Tell us about your needs, your market, your story...",
-    "howFound": "How did you find our family?",
+    "howFound": "How did you find our company?",
     "required": "This field is required",
     "invalidEmail": "Invalid email address",
     "units": {
@@ -268,7 +268,7 @@
   "footer": {
     "tagline": "Three generations of Cambodian rice heritage. From contract farm to global export.",
     "subTagline": "Since 1994 — Serving you quality rice with heart",
-    "ourFamily": "Our Family",
+    "ourCompany": "Our Company",
     "ourRice": "Our Rice",
     "connect": "Connect",
     "getInTouch": "Get in Touch",
@@ -279,7 +279,7 @@
   },
   "contact": {
     "pageTitle": "Get in Touch",
-    "pageSubtitle": "We'd love to hear from you. Whether you have a question, need a quote, or want to visit our mill — our family team is here to help.",
+    "pageSubtitle": "We'd love to hear from you. Whether you have a question, need a quote, or want to visit our mill — our company team is here to help.",
     "formTitle": "Send Us a Message",
     "formSubtitle": "Fill out the form below and we'll get back to you within 24 hours.",
     "name": "Full Name",

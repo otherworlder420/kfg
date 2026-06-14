@@ -180,14 +180,14 @@
     "attribution": "— 柬埔寨食品集团团队"
   },
   "news": {
-    "label": "来自我们的家庭",
+    "label": "来自我们的公司",
     "title": "新闻与故事",
     "description": "来自我们农场、我们社区的最新消息，以及我们将柬埔寨大米分享给世界的征程。"
   },
   "footer": {
     "tagline": "三代柬埔寨大米传承。从合同农场到全球出口。",
     "subTagline": "自1994年起 — 用心为您提供优质大米",
-    "ourFamily": "我们的家庭",
+    "ourCompany": "我们的公司",
     "ourRice": "我们的大米",
     "connect": "联系",
     "getInTouch": "联系我们",
@@ -198,7 +198,7 @@
   },
   "contact": {
     "pageTitle": "联系我们",
-    "pageSubtitle": "我们很乐意听到您的消息。无论您有问题、需要报价，还是想参观我们的磨米厂——我们的家庭团队随时为您服务。",
+    "pageSubtitle": "我们很乐意听到您的消息。无论您有问题、需要报价，还是想参观我们的磨米厂——我们的公司团队随时为您服务。",
     "formTitle": "给我们发消息",
     "formSubtitle": "填写下方表单，我们将在24小时内回复您。",
     "name": "全名",
@@ -226,9 +226,9 @@
   },
   "form": {
     "title": "让我们开启合作之旅",
-    "description": "告诉我们您在寻找什么，我们的家庭团队成员将24小时内回复您。我们很喜欢结识新朋友。",
+    "description": "告诉我们您在寻找什么，我们的公司团队成员将24小时内回复您。我们很喜欢结识新朋友。",
     "successTitle": "感谢您！",
-    "successMessage": "我们已收到您的消息！我们的家庭团队将24小时内与您联系。我们期待认识您。",
+    "successMessage": "我们已收到您的消息！我们的公司团队将24小时内与您联系。我们期待认识您。",
     "backButton": "返回首页",
     "submitButton": "发送我的询盘",
     "submitting": "发送中...",
@@ -252,7 +252,7 @@
     "shippingTerms": "首选运输条款",
     "specialRequirements": "我们还应该知道什么？",
     "specialRequirementsPlaceholder": "告诉我们您的需求、您的市场、您的故事...",
-    "howFound": "您是怎么找到我们的家庭的？",
+    "howFound": "您是怎么找到我们的公司的？",
     "required": "此字段为必填项",
     "invalidEmail": "电子邮件地址无效",
     "units": {

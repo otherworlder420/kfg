@@ -5,7 +5,7 @@ import { useApp } from "@/context/AppContext";
 
 const footerColumns = [
   {
-    title: "Our Family",
+    title: "Our Company",
     links: [
       { label: "Home", href: "/" },
       { label: "Our Story", href: "/about" },
