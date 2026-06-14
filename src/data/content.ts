@@ -21,7 +21,7 @@ export const COMPANY = {
   formEmail: "bunsannkim@khmerfoods.com",
   phone: "+855 12 977-888",
   address: "#9021, National Road No.3, Prey Totueng Village, Preah Nipean Commune, Kong Pisei District, Kampong Speu Province, Cambodia",
-  mapUrl: "https://maps.app.goo.gl/Ayceaj2ze1UPUALh8",
+  mapUrl: "https://maps.app.goo.gl/6mzU837Chiu1Nn9a8",
   year: 2026,
   founded: 1994,
   firstMill: 1999,

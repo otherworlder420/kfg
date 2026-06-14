@@ -216,7 +216,7 @@ export default function ContactPage() {
       <section className="bg-cream-200">
         <div className="h-[400px] w-full bg-dark-200 relative">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3906.825123456789!2d104.5647551!3d11.6153889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOVFGK1JXIFByZXkgVG9UdWVuZywgQ2FtYm9kaWE!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.7382211825034!2d104.7748663!3d11.3995738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310943eb2fcc2a37%3A0x6c0cb74f4474bbf6!2sKhmer%20Foods%20Group%20Rice%20Mill!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
             width="100%" height="100%" style={{ border: 0, filter: "grayscale(20%)" }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Khmer Foods Group Location"
           />
           <div className="absolute bottom-4 left-4 bg-cream-100 rounded-lg shadow-lg p-4 max-w-xs">

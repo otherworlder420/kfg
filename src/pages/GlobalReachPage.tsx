@@ -235,7 +235,7 @@ export default function GlobalReachPage() {
       <section className="bg-dark-900 py-16">
         <div className="container-main page-padding text-center">
           <Globe size={48} className="text-gold-400 mx-auto mb-4" />
-          <h2 className="font-display text-3xl text-white">Start Exporting with Us</h2>
+          <h2 className="font-display text-3xl text-white">Start Importing Rice with Us</h2>
           <p className="text-cream-100/70 mt-4 max-w-lg mx-auto font-light">
             Whether you're a distributor, importer, or retailer, we have the capacity, certifications, 
             and logistics network to serve your market.

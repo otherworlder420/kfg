@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
-import { CheckCircle, ArrowRight } from "lucide-react";
+import { CheckCircle, ArrowRight, MapPin, TrainFront } from "lucide-react";
 import SectionLabel from "@/components/SectionLabel";
 import { useApp } from "@/context/AppContext";
 
@@ -233,6 +233,67 @@ export default function ProcessPage() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Rice Mills & Railway Network */}
+      <section className="bg-cream-200 py-16">
+        <div className="container-main page-padding">
+          <div className="text-center mb-12">
+            <SectionLabel label="Infrastructure" />
+            <h2 className="font-display text-3xl font-medium text-dark-800 mt-4">Two Mills, One Seamless Network</h2>
+            <p className="text-dark-600 mt-4 max-w-3xl mx-auto font-light">
+              Our two rice mills are strategically located in Cambodia's key rice-growing regions and are linked by a dedicated railway network.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {/* Battambang Mill */}
+            <div className="bg-cream-100 rounded-xl p-8 shadow-card">
+              <div className="flex items-center gap-3 mb-4">
+                <MapPin className="text-gold-400" size={24} />
+                <h3 className="font-display text-xl font-medium text-dark-800">Battambang Rice Mill</h3>
+              </div>
+              <p className="text-dark-600 font-light mb-4">
+                Located in Battambang province, in the heart of Cambodia's northwestern rice bowl.
+              </p>
+              <a
+                href="https://maps.app.goo.gl/iYj3MJ8LZFSsC54eA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-gold-400 hover:underline"
+              >
+                View on Google Maps <ArrowRight size={14} />
+              </a>
+            </div>
+
+            {/* Kampong Speu Mill */}
+            <div className="bg-cream-100 rounded-xl p-8 shadow-card">
+              <div className="flex items-center gap-3 mb-4">
+                <MapPin className="text-gold-400" size={24} />
+                <h3 className="font-display text-xl font-medium text-dark-800">Kampong Speu Rice Mill</h3>
+              </div>
+              <p className="text-dark-600 font-light mb-4">
+                Located in Kampong Speu province, with direct access to the national railway line and seaport connection.
+              </p>
+              <a
+                href="https://maps.app.goo.gl/6mzU837Chiu1Nn9a8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-gold-400 hover:underline"
+              >
+                View on Google Maps <ArrowRight size={14} />
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-dark-900 rounded-xl p-8 text-center">
+            <TrainFront size={48} className="text-gold-400 mx-auto mb-4" />
+            <h3 className="font-display text-2xl text-white mb-4">Private Railway Sidings</h3>
+            <p className="text-cream-100/70 max-w-3xl mx-auto font-light leading-relaxed">
+              Both mills feature private railway sidings built directly into our warehouses, connecting the two facilities together and linking them directly to Cambodia's deep seaport. This integrated rail infrastructure enables us to export huge volumes efficiently — up to <strong className="text-white">300 containers per week</strong>.
+            </p>
           </div>
         </div>
       </section>
