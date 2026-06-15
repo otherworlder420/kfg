@@ -10,6 +10,7 @@
 
 // --- FORM SUBMISSION ---
 export const FORM_ENDPOINT = "https://formsubmit.co/ajax/bunsannkim@khmerfoods.com";
+export const CONTACT_FORM_ENDPOINT = "https://formsubmit.co/ajax/rice@khmerfoods.com";
 
 // --- COMPANY INFO ---
 export const COMPANY = {
