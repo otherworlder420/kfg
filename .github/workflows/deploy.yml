@@ -29,8 +29,9 @@ jobs:
       - name: Extract Kroya zip to dist
         run: |
           mkdir -p dist/kroya
-          unzip -q kroya/kroya-html.zip -d dist/
-          mv dist/kroya/* dist/kroya/ 2>/dev/null || true
+          unzip -q kroya/kroya-html.zip -d dist/kroya-temp/
+          mv dist/kroya-temp/kroya/* dist/kroya/
+          rm -rf dist/kroya-temp
 
       - name: Deploy to Staging
         if: startsWith(github.ref_name, 'staging/')
