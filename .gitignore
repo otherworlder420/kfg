@@ -1,3 +1,6 @@
+# Kroya subwebsite (extracted files — keep only zip in repo)
+kroya/kroya/
+
 # Logs
 logs
 *.log
@@ -22,3 +25,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+kroya/kroya-html.zip

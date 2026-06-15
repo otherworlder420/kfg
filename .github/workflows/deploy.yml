@@ -26,6 +26,12 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Extract Kroya zip to dist
+        run: |
+          mkdir -p dist/kroya
+          unzip -q kroya/kroya-html.zip -d dist/
+          mv dist/kroya/* dist/kroya/ 2>/dev/null || true
+
       - name: Deploy to Staging
         if: startsWith(github.ref_name, 'staging/')
         uses: cloudflare/wrangler-action@v3
